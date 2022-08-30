@@ -25,7 +25,7 @@ function my_loginURL() {
 }
 add_filter('login_headerurl', 'my_loginURL');
 function my_loginURLtext() {
-    return 'Engl Amps';
+    return 'Palm Bay Guitars';
 }
 add_filter('login_headertitle', 'my_loginURLtext');
 // Add artists shortcode
