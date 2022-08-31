@@ -40,8 +40,25 @@ body {
     }
     .et_pb_button_module_wrapper .et_pb_button, .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon .et_pb_button {
         padding: 0.5em 1.5em 0.3em 1.5em !important;
+        border: 3px solid;
+        border-image-slice: 1;
+        border-width: 3px;
+        border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+        @include ease2();
+        background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
         &:hover {
             padding: 0.5em 1.5em 0.3em 1.5em !important;
+            background: -moz-linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
+            background: -webkit-linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
+            background: linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+            color: $white;
         }
     }
     #page-container {

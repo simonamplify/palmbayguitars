@@ -2,12 +2,12 @@
 STYLES
 =========================== */
 ::-moz-selection {
-  background: #bea668;
+  background: #63279b;
   color: #ffffff;
 }
 
 ::selection {
-  background: #bea668;
+  background: #63279b;
   color: #ffffff;
 }
 
@@ -36,10 +36,26 @@ body .subHeader h2 {
 
 body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, body .et_button_no_icon .et_pb_button {
   padding: 0.5em 1.5em 0.3em 1.5em !important;
+  border: 3px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover, body .et_button_no_icon .et_pb_button:hover {
   padding: 0.5em 1.5em 0.3em 1.5em !important;
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+  color: #ffffff;
 }
 
 body #page-container {
@@ -143,7 +159,7 @@ body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-i
 }
 
 body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-item > a, body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-ancestor > a, body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-parent > a {
-  color: #bea668 !important;
+  color: #63279b !important;
 }
 
 body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.twoCol > .sub-menu {
@@ -342,9 +358,9 @@ body #page-container header .menuSearchBtn {
   -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
   right: 0;
-  border-left: solid 1px #64646c;
-  border-right: solid 1px #64646c;
-  border-bottom: solid 1px #64646c;
+  border-left: solid 1px #b70e41;
+  border-right: solid 1px #c50a32;
+  border-bottom: solid 1px #c10a32;
 }
 
 body #page-container header .menuSearchBtn .material-icons {
@@ -354,11 +370,7 @@ body #page-container header .menuSearchBtn .material-icons {
 
 @media (hover: hover) {
   body #page-container header .menuSearchBtn:hover {
-    background: #bea668;
-    color: #ffffff;
-    border-left: solid 1px #bea668;
-    border-right: solid 1px #bea668;
-    border-bottom: solid 1px #bea668;
+    color: #dc061e;
   }
 }
 
@@ -409,7 +421,7 @@ body #page-container #et-main-area .et_pb_text a::before {
   left: 0;
   bottom: -.2rem;
   right: 100%;
-  border-bottom: 1px solid #bea668;
+  border-bottom: 1px solid #63279b;
 }
 
 body #page-container #et-main-area .et_pb_text a::after {
@@ -418,7 +430,7 @@ body #page-container #et-main-area .et_pb_text a::after {
   right: 0;
   left: 100%;
   bottom: -.2rem;
-  border-bottom: 1px solid #bea668;
+  border-bottom: 1px solid #63279b;
   -webkit-transition: left .15s ease-out;
   transition: left .15s ease-out;
   -webkit-transition-delay: 0s;
@@ -740,13 +752,13 @@ body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-header .m
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-header .mapsvg-filters-wrap .mapsvg-controller-view .mapsvg-controller-view-wrap .mapsvg-controller-view-content .mapsvg-form-builder .mapsvg-data-form-view .form-group.mapsvg-filters-reset-container .mapsvg-filters-reset {
   background-color: transparent;
-  color: #bea668;
+  color: #63279b;
   padding: 0;
   border: none;
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-header .mapsvg-filters-wrap .mapsvg-controller-view .mapsvg-controller-view-wrap .mapsvg-controller-view-content .mapsvg-form-builder .mapsvg-data-form-view .form-group.mapsvg-filters-reset-container .mapsvg-filters-reset:hover, body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-header .mapsvg-filters-wrap .mapsvg-controller-view .mapsvg-controller-view-wrap .mapsvg-controller-view-content .mapsvg-form-builder .mapsvg-data-form-view .form-group.mapsvg-filters-reset-container .mapsvg-filters-reset:active {
-  color: #bea668;
+  color: #63279b;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -801,7 +813,7 @@ body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .map
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-sidebar .mapsvg-directory .mapsvg-controller-view .mapsvg-controller-view-wrap .mapsvg-controller-view-content .mapsvg-directory-item:hover, body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-sidebar .mapsvg-directory .mapsvg-controller-view .mapsvg-controller-view-wrap .mapsvg-controller-view-content .mapsvg-directory-item.hover, body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-sidebar .mapsvg-directory .mapsvg-controller-view .mapsvg-controller-view-wrap .mapsvg-controller-view-content .mapsvg-directory-item.selected {
   background: #000000 !important;
-  color: #bea668 !important;
+  color: #63279b !important;
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-map-container .mapsvg .mapsvg-tooltip {
@@ -846,7 +858,7 @@ body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .map
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-map-container .mapsvg .mapsvg-layers-wrap .mapsvg-marker-cluster:hover {
-  color: #bea668;
+  color: #63279b;
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container {
@@ -876,12 +888,12 @@ body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .map
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container .mapsvg-controller-view-wrap .mapsvg-controller-view-content span {
-  color: #bea668;
+  color: #63279b;
   margin-right: 5px;
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container .mapsvg-controller-view-wrap .mapsvg-controller-view-content a:hover {
-  color: #bea668;
+  color: #63279b;
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container .mapsvg-controller-view-wrap .mapsvg-controller-view-content .name {
@@ -909,7 +921,7 @@ body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .map
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container .mapsvg-controller-view-wrap .mapsvg-controller-view-content .location a:hover, body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container .mapsvg-controller-view-wrap .mapsvg-controller-view-content .phone a:hover, body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container .mapsvg-controller-view-wrap .mapsvg-controller-view-content .email a:hover, body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-wrap .mapsvg-details-container .mapsvg-controller-view-wrap .mapsvg-controller-view-content .website a:hover {
-  color: #bea668;
+  color: #63279b;
 }
 
 body #page-container #et-main-area #main-content #mapsvg-map-1 .mapsvg-mobile-buttons {
@@ -1462,7 +1474,7 @@ body #page-container #et-main-area #main-content #artists .artistModal .closeArt
 }
 
 body #page-container #et-main-area #main-content #artists .artistModal .closeArtist:hover {
-  color: #bea668;
+  color: #63279b;
 }
 
 body #page-container #et-main-area #main-content #artists .artistOverlay {
@@ -1548,7 +1560,7 @@ body #page-container #et-main-area #main-content .cards .card .btn h3 {
 
 body #page-container #et-main-area #main-content .cards .card .btn:hover h3 {
   color: #ffffff;
-  background: #bea668 !important;
+  background: #63279b !important;
 }
 
 body #page-container #et-main-area #main-content .cards .card.expanded {
@@ -1598,8 +1610,8 @@ body #page-container #et-main-area #main-content .gform_wrapper .gfield_required
 }
 
 body #page-container #et-main-area #main-content .gform_wrapper .gform_validation_errors {
-  border-color: #c0392b;
-  background: #c0392b;
+  border-color: #dc061e;
+  background: #dc061e;
   color: #ffffff;
   margin: 0 0 20px 0;
   border-radius: 0;
@@ -1700,8 +1712,8 @@ body #page-container #et-main-area #main-content .gform_wrapper .gform_body .gfo
 body #page-container #et-main-area #main-content .gform_wrapper .gform_body .gform_fields .gfield .gfield_description, body #page-container #et-main-area #main-content .gform_wrapper .gform_body .gform_fields .gfield .validation_message, body #page-container #et-main-area #main-content .gform_wrapper .gform_body .gform_fields .gfield .gfield_validation_message {
   font-size: 13px;
   padding: 0px 10px 0px 10px;
-  border-color: #c0392b;
-  background: #c0392b;
+  border-color: #dc061e;
+  background: #dc061e;
   color: #ffffff;
   letter-spacing: .02rem;
 }
@@ -1710,8 +1722,8 @@ body #page-container #et-main-area #main-content .gform_wrapper input[type=submi
   color: #ffffff;
   padding: .5em 1.5em .3em !important;
   font-size: 16px;
-  background-color: #bea668;
-  border-color: #bea668;
+  background-color: #63279b;
+  border-color: #63279b;
   border-radius: 0px;
   font-weight: bold;
   font-style: normal;
@@ -1726,7 +1738,7 @@ body #page-container #et-main-area #main-content .gform_wrapper input[type=submi
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-  border: 2px solid #bea668;
+  border: 2px solid #63279b;
   -webkit-transition-property: all !important;
   transition-property: all !important;
   margin: 0;
@@ -1738,9 +1750,9 @@ body #page-container #et-main-area #main-content .gform_wrapper input[type=submi
 }
 
 body #page-container #et-main-area #main-content .gform_wrapper input[type=submit]:hover {
-  color: #bea668 !important;
+  color: #63279b !important;
   background-color: rgba(190, 166, 104, 0);
-  border-color: #bea668 !important;
+  border-color: #63279b !important;
   letter-spacing: -1px;
 }
 
@@ -1866,7 +1878,7 @@ body #page-container #et-main-area footer .contactDetails .contactItem {
 }
 
 body #page-container #et-main-area footer .contactDetails .contactItem i {
-  color: #bea668;
+  color: #63279b;
   position: absolute;
   left: 0;
   top: 5px;
@@ -1945,7 +1957,7 @@ body #page-container .et_pb_login .et_pb_forgot_password {
 
 body .et_pb_scroll_top {
   border-radius: 0 !important;
-  background: #bea668 !important;
+  background: #63279b !important;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
@@ -2107,7 +2119,7 @@ body .et_pb_scroll_top:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #bea668;
+  color: #63279b;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -2214,7 +2226,7 @@ body .et_pb_scroll_top:hover {
 }
 
 .woocommerce-page #page-container #et-main-area #main-content form label .required {
-  color: #c0392b;
+  color: #dc061e;
 }
 
 .woocommerce-page #page-container #et-main-area #main-content form .input.text, .woocommerce-page #page-container #et-main-area #main-content form input.title, .woocommerce-page #page-container #et-main-area #main-content form input[type=email], .woocommerce-page #page-container #et-main-area #main-content form input[type=password], .woocommerce-page #page-container #et-main-area #main-content form input[type=tel], .woocommerce-page #page-container #et-main-area #main-content form input[type=text], .woocommerce-page #page-container #et-main-area #main-content form select, .woocommerce-page #page-container #et-main-area #main-content form textarea {
@@ -2505,7 +2517,7 @@ body .et_pb_scroll_top:hover {
   left: 0;
   bottom: -.2rem;
   right: 100%;
-  border-bottom: 1px solid #bea668;
+  border-bottom: 1px solid #63279b;
 }
 
 .woocommerce-page #page-container #et-main-area a::after {
@@ -2514,7 +2526,7 @@ body .et_pb_scroll_top:hover {
   right: 0;
   left: 100%;
   bottom: -.2rem;
-  border-bottom: 1px solid #bea668;
+  border-bottom: 1px solid #63279b;
   -webkit-transition: left .15s ease-out;
   transition: left .15s ease-out;
   -webkit-transition-delay: 0s;
@@ -2712,8 +2724,8 @@ body .et_pb_scroll_top:hover {
 .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .actions .button:disabled, .woocommerce-page.woocommerce-cart #page-container #et-main-area #main-content .woocommerce .woocommerce-cart-form .woocommerce-cart-form__contents .actions .button:disabled[disabled] {
   padding: 0.5em 1.5em 0.3em 1.5em !important;
   font-size: 16px;
-  background-color: #bea668;
-  border-color: #bea668;
+  background-color: #63279b;
+  border-color: #63279b;
   border-radius: 0px;
   font-weight: bold;
   font-style: normal;
@@ -2785,12 +2797,12 @@ body .et_pb_scroll_top:hover {
 }
 
 .woocommerce-page.woocommerce-account #page-container #et-main-area #main-content .woocommerce .woocommerce-MyAccount-navigation ul li a:hover {
-  background-color: #bea668;
+  background-color: #63279b;
   color: #ffffff;
 }
 
 .woocommerce-page.woocommerce-account #page-container #et-main-area #main-content .woocommerce .woocommerce-MyAccount-navigation ul li.is-active a {
-  background-color: #bea668;
+  background-color: #63279b;
   color: #ffffff;
 }
 
@@ -3033,3 +3045,4 @@ body .et_pb_scroll_top:hover {
 .select2-container .select2-dropdown .select2-results .select2-results__options .select2-results__option.select2-results__option--highlighted {
   background-color: #000000 !important;
 }
+/*# sourceMappingURL=stylesheet.css.map */

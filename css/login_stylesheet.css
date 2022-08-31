@@ -2,7 +2,7 @@
 LOGIN PAGE
 =========================== */
 .login #login h1 a {
-  background-image: url("/wp-content/uploads/2022/08/friedman-logo-black.svg") !important;
+  background-image: url("/wp-content/uploads/2022/09/palm-bay-guitar-logo.svg") !important;
   background-size: contain;
   height: 75px;
   width: auto;
@@ -11,3 +11,4 @@ LOGIN PAGE
 .grecaptcha-badge {
   visibility: hidden !important;
 }
+/*# sourceMappingURL=login_stylesheet.css.map */
