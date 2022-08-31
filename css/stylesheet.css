@@ -52,7 +52,7 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
   position: relative;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::after, body .et_button_no_icon .et_pb_button::after {
+body .et_pb_button_module_wrapper .et_pb_button::before, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::before, body .et_button_no_icon .et_pb_button::before {
   content: "";
   position: absolute;
   display: block;
@@ -64,6 +64,8 @@ body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_modul
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin: 0;
+  padding: 0;
 }
 
 body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover, body .et_button_no_icon .et_pb_button:hover {
@@ -71,6 +73,7 @@ body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module
   text-fill-color: #ffffff;
   -webkit-text-fill-color: #ffffff;
   color: #ffffff;
+  border: 3px solid;
 }
 
 body .et_pb_button_module_wrapper .et_pb_button:hover::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover::after, body .et_button_no_icon .et_pb_button:hover::after {
