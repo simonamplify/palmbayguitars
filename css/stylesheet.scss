@@ -52,13 +52,29 @@ body {
         -webkit-background-clip: text;
         text-fill-color: transparent;
         -webkit-text-fill-color: transparent;
-        &:hover {
-            padding: 0.5em 1.5em 0.3em 1.5em !important;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
             background: -moz-linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
             background: -webkit-linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
             background: linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+            opacity: 0;
+            @include ease2();
+        }
+        &:hover {
+            padding: 0.5em 1.5em 0.3em 1.5em !important;
+            text-fill-color: $white;
+            -webkit-text-fill-color: $white;
             color: $white;
+            &::after {
+                opacity: 1;
+            }
         }
     }
     #page-container {
