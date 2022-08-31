@@ -52,12 +52,14 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
   position: relative;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button::before, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::before, body .et_button_no_icon .et_pb_button::before {
+body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::after, body .et_button_no_icon .et_pb_button::after {
   content: "";
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   z-index: -1;
   background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
