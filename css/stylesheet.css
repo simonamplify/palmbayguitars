@@ -66,7 +66,7 @@ body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_modul
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 }
 
@@ -83,6 +83,7 @@ body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module
 
 body .et_pb_button_module_wrapper .et_pb_button:hover::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover::after, body .et_button_no_icon .et_pb_button:hover::after {
   opacity: 1;
+  margin: 0 !important;
 }
 
 body #page-container {

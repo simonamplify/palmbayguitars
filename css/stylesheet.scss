@@ -68,7 +68,7 @@ body {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
             opacity: 0;
             @include ease2();
-            margin: 0;
+            margin: 0!important;
             padding: 0;
         }
         &:hover {
@@ -82,6 +82,7 @@ body {
             border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
             &::after {
                 opacity: 1;
+                margin: 0!important;
             }
         }
     }
