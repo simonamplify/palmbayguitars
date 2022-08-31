@@ -77,6 +77,9 @@ body {
             -webkit-text-fill-color: $white;
             color: $white;
             border: 3px solid;
+            border-image-slice: 1;
+            border-width: 3px;
+            border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
             &::after {
                 opacity: 1;
             }
