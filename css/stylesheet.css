@@ -425,6 +425,28 @@ body #page-container #et-main-area .et_pb_row.fwRow {
   max-width: none !important;
 }
 
+body #page-container #et-main-area .et_pb_text.titleGrad h1, body #page-container #et-main-area .et_pb_text.titleGrad h2, body #page-container #et-main-area .et_pb_text.titleGrad h3, body #page-container #et-main-area .et_pb_text.titleGrad h4 {
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+body #page-container #et-main-area .et_pb_text.textGrad .et_pb_text_inner {
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 @media (min-width: 981px) {
   body #page-container #et-main-area .et_pb_text.twoCol .et_pb_text_inner {
     -webkit-column-count: 2;

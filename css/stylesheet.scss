@@ -94,6 +94,18 @@ body {
                 max-width: none!important;
             }
             .et_pb_text {
+                &.titleGrad {
+                    h1, h2, h3, h4 {
+                        @include textGrad();
+                        display: inline-block;
+                    }
+                }
+                &.textGrad {
+                    .et_pb_text_inner {
+                        @include textGrad();
+                        display: inline-block;
+                    }  
+                }
                 &.twoCol {
                     .et_pb_text_inner {
                         @media (min-width: 981px) {
