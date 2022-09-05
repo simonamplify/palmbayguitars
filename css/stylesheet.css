@@ -61,8 +61,8 @@ body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_modul
   top: 0;
   left: 0;
   z-index: -1;
-  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1610,8 +1610,8 @@ body #page-container #et-main-area #main-content .cards .card .btn h3 {
 
 body #page-container #et-main-area #main-content .cards .card .btn:hover h3 {
   color: #ffffff;
-  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
 }
 
 body #page-container #et-main-area #main-content .cards .card.expanded {
@@ -2008,8 +2008,8 @@ body #page-container .et_pb_login .et_pb_forgot_password {
 
 body .et_pb_scroll_top {
   border-radius: 0 !important;
-  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
