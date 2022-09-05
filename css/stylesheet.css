@@ -34,7 +34,7 @@ body .subHeader h2 {
   padding-bottom: 0;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, body .et_button_no_icon .et_pb_button {
+body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, body .et_button_no_icon .et_pb_button, body .et_pb_newsletter_button {
   padding: 0.5em 1.5em 0.4em 1.5em !important;
   border: 3px solid;
   border-image-slice: 1;
@@ -52,7 +52,7 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
   position: relative;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::after, body .et_button_no_icon .et_pb_button::after {
+body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::after, body .et_button_no_icon .et_pb_button::after, body .et_pb_newsletter_button::after {
   content: "";
   position: absolute;
   display: block;
@@ -70,7 +70,7 @@ body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_modul
   padding: 0;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover, body .et_button_no_icon .et_pb_button:hover {
+body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover, body .et_button_no_icon .et_pb_button:hover, body .et_pb_newsletter_button:hover {
   padding: 0.5em 1.5em 0.4em 1.5em !important;
   text-fill-color: #ffffff;
   -webkit-text-fill-color: #ffffff;
@@ -81,7 +81,7 @@ body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button:hover::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover::after, body .et_button_no_icon .et_pb_button:hover::after {
+body .et_pb_button_module_wrapper .et_pb_button:hover::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover::after, body .et_button_no_icon .et_pb_button:hover::after, body .et_pb_newsletter_button:hover::after {
   opacity: 0.5 !important;
   margin: 0 !important;
 }
@@ -2007,7 +2007,8 @@ body #page-container .et_pb_login .et_pb_forgot_password {
 
 body .et_pb_scroll_top {
   border-radius: 0 !important;
-  background: #63279b !important;
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
