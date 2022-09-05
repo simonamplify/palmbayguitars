@@ -1592,7 +1592,7 @@ body #page-container #et-main-area #main-content .cards .card .btn {
 
 body #page-container #et-main-area #main-content .cards .card .btn h3 {
   color: #ffffff;
-  padding: .5em 1.5em .3em !important;
+  padding: .5em 1.5em .4em !important;
   background: transparent;
   white-space: nowrap;
   text-align: center;
@@ -1610,7 +1610,8 @@ body #page-container #et-main-area #main-content .cards .card .btn h3 {
 
 body #page-container #et-main-area #main-content .cards .card .btn:hover h3 {
   color: #ffffff;
-  background: #63279b !important;
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
 }
 
 body #page-container #et-main-area #main-content .cards .card.expanded {
