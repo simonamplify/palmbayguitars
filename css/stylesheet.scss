@@ -48,7 +48,7 @@ body {
         @include textGrad();
         position: relative;
         &::after {
-            content: "";
+            content: ""!important;
             position: absolute;
             display: block;
             width: 100%;

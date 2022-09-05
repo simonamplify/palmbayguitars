@@ -53,7 +53,7 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
 }
 
 body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::after, body .et_button_no_icon .et_pb_button::after, body .et_pb_newsletter_button::after {
-  content: "";
+  content: "" !important;
   position: absolute;
   display: block;
   width: 100%;
@@ -1895,11 +1895,11 @@ body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_fo
 }
 
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap .et_pb_newsletter_button {
-  padding: 0.5em 1.5em 0.3em 1.5em !important;
+  padding: 0.5em 1.5em 0.4em 1.5em !important;
 }
 
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap .et_pb_newsletter_button:hover {
-  padding: 0.5em 1.5em 0.3em 1.5em !important;
+  padding: 0.5em 1.5em 0.4em 1.5em !important;
 }
 
 body #page-container #et-main-area footer .contactDetails {
