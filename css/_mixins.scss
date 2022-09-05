@@ -54,3 +54,18 @@
         }
     }
 }
+@mixin textGrad {
+    background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+@mixin colourGrad {
+    background: -moz-linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
+    background: -webkit-linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
+    background: linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+}

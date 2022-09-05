@@ -39,19 +39,13 @@ body {
         }
     }
     .et_pb_button_module_wrapper .et_pb_button, .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon .et_pb_button {
-        padding: 0.5em 1.5em 0.3em 1.5em !important;
+        padding: 0.5em 1.5em 0.4em 1.5em !important;
         border: 3px solid;
         border-image-slice: 1;
         border-width: 3px;
         border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
         @include ease2();
-        background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-background-clip: text;
-        text-fill-color: transparent;
-        -webkit-text-fill-color: transparent;
+        @include textGrad();
         position: relative;
         &::after {
             content: "";
@@ -62,17 +56,14 @@ body {
             top: 0;
             left: 0;
             z-index: -1;
-            background: -moz-linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%);
-            background: -webkit-linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
-            background: linear-gradient(45deg, #073ffa 0%,#63279b 50%,#dc061e 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 );
+            @include colourGrad();
             opacity: 0;
             @include ease2();
             margin: 0!important;
             padding: 0;
         }
         &:hover {
-            padding: 0.5em 1.5em 0.3em 1.5em !important;
+            padding: 0.5em 1.5em 0.4em 1.5em !important;
             text-fill-color: $white;
             -webkit-text-fill-color: $white;
             color: $white;
@@ -208,9 +199,9 @@ body {
                 }
             }
             .et_pb_button_module_wrapper .et_pb_button, .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon .et_pb_button, .et_pb_contact_submit {
-                padding: 0.5em 1.5em 0.3em 1.5em !important;
+                padding: 0.5em 1.5em 0.4em 1.5em !important;
                 &:hover {
-                    padding: 0.5em 1.5em 0.3em 1.5em !important;
+                    padding: 0.5em 1.5em 0.4em 1.5em !important;
                 }
             }
             .socialIcons {
@@ -281,9 +272,9 @@ body {
                                     }
                                 }*/
                                 .et_pb_button {
-                                    padding: 0.5em 1.5em 0.3em 1.5em !important;
+                                    padding: 0.5em 1.5em 0.4em 1.5em !important;
                                     &:hover {
-                                        padding: 0.5em 1.5em 0.3em 1.5em !important;
+                                        padding: 0.5em 1.5em 0.4em 1.5em !important;
                                     }
                                 }
                                 
@@ -989,9 +980,9 @@ body {
         }
         .et_pb_login {
             .et_pb_button {
-                padding: 0.5em 1.5em 0.3em 1.5em !important;
+                padding: 0.5em 1.5em 0.4em 1.5em !important;
                 &:hover {
-                    padding: 0.5em 1.5em 0.3em 1.5em !important;
+                    padding: 0.5em 1.5em 0.4em 1.5em !important;
                 }
             }
             .et_pb_forgot_password {
