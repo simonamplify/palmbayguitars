@@ -72,7 +72,7 @@ body {
             border-width: 3px;
             border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
             &::after {
-                opacity: 1;
+                opacity: 0.5!important;
                 margin: 0!important;
             }
         }
