@@ -2012,10 +2012,11 @@ body .et_pb_scroll_top {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
+  opacity: 0.5;
 }
 
 body .et_pb_scroll_top:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .mfp-wrap .mfp-container.mfp-image-holder .mfp-content .mfp-figure figure {
