@@ -820,7 +820,10 @@ body {
                             &:hover {
                                 h3 {
                                     color: $white;
-                                    @include colourGrad();
+                                    background: -moz-linear-gradient(45deg, rgba(7, 63, 250, 0.5) 0%, rgba(99, 39, 155, 0.5) 50%, rgba(220, 6, 30, 0.5) 100%)!important;
+                                    background: -webkit-linear-gradient(45deg, rgba(7, 63, 250, 0.5) 0%,rgba(99, 39, 155, 0.5) 50%,rgba(220, 6, 30, 0.5) 100%)!important;
+                                    background: linear-gradient(45deg, rgba(7, 63, 250, 0.5) 0%,rgba(99, 39, 155, 0.5) 50%,rgba(220, 6, 30, 0.5) 100%)!important;
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 )!important;
                                 }
                             }
                         }
