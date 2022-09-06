@@ -40,9 +40,9 @@ body {
     }
     .et_pb_button_module_wrapper .et_pb_button, .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon .et_pb_button, .et_pb_newsletter_button {
         padding: 0.5em 1.5em 0.4em 1.5em !important;
-        border: 3px solid;
+        border: 1px solid;
         border-image-slice: 1;
-        border-width: 3px;
+        border-width: 1px;
         border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
         @include ease2();
         @include textGrad();
@@ -67,9 +67,9 @@ body {
             text-fill-color: $white;
             -webkit-text-fill-color: $white;
             color: $white;
-            border: 3px solid;
+            border: 1px solid;
             border-image-slice: 1;
-            border-width: 3px;
+            border-width: 1px;
             border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
             &::after {
                 opacity: 0.5!important;
