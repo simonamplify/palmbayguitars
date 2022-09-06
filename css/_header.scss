@@ -89,7 +89,8 @@ header {
                         }
                         &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
                             > a {
-                                color: $primary1!important;
+                                color: $primary1;
+                                @include colourGrad();
                             }
                         }
                         &.twoCol {
@@ -200,7 +201,8 @@ header {
                             }
                             &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
                                 > a {
-                                    color: $white!important;
+                                    color: $primary1;
+                                    @include colourGrad();
                                 }
                             }
                         }
