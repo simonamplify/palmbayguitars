@@ -190,8 +190,13 @@ body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-i
 
 body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-item > a, body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-ancestor > a, body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.current-menu-parent > a {
   color: #63279b;
-  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 body #page-container header .et_pb_menu.faMenu .et-menu-nav ul.et-menu li.menu-item.twoCol > .sub-menu {
@@ -327,8 +332,13 @@ body #page-container header .et_pb_menu.faMenu .et_mobile_nav_menu .mobile_nav u
 
 body #page-container header .et_pb_menu.faMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-item > a, body #page-container header .et_pb_menu.faMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-ancestor > a, body #page-container header .et_pb_menu.faMenu .et_mobile_nav_menu .mobile_nav ul.et_mobile_menu li.menu-item.current-menu-parent > a {
   color: #63279b;
-  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 body #page-container header .menuSearch {

@@ -90,7 +90,7 @@ header {
                         &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
                             > a {
                                 color: $primary1;
-                                @include colourGrad();
+                                @include textGrad();
                             }
                         }
                         &.twoCol {
@@ -202,7 +202,7 @@ header {
                             &.current-menu-item, &.current-menu-ancestor, &.current-menu-parent {
                                 > a {
                                     color: $primary1;
-                                    @include colourGrad();
+                                    @include textGrad();
                                 }
                             }
                         }
