@@ -2,12 +2,14 @@
 STYLES
 =========================== */
 ::-moz-selection {
-  background: #63279b;
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
   color: #ffffff;
 }
 
 ::selection {
-  background: #63279b;
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
   color: #ffffff;
 }
 
@@ -591,14 +593,19 @@ body #page-container #et-main-area .socialIcons {
 }
 
 body #page-container #et-main-area .socialIcons img {
-  height: 40px;
-  opacity: 0.75;
-  -webkit-transition: opacity 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
-  transition: opacity 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  height: 50px;
+  opacity: 1;
+  -webkit-filter: brightness(100);
+          filter: brightness(100);
+  -webkit-transition: -webkit-filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  transition: -webkit-filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  transition: filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  transition: filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2), -webkit-filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
 }
 
 body #page-container #et-main-area .socialIcons img:hover {
-  opacity: 1;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
 }
 
 body #page-container #et-main-area .socialIcons a {
@@ -1974,7 +1981,7 @@ body #page-container #et-main-area footer .footerBar .amplify a::after {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url(/wp-content/uploads/2022/08/amplify-creative-glyph-animated.svg) no-repeat;
+  background: url(/wp-content/uploads/2022/09/amplify-creative-glyph-animated.svg) no-repeat;
   background-size: contain;
 }
 
@@ -2012,7 +2019,7 @@ body .et_pb_scroll_top {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#073ffa', endColorstr='#dc061e',GradientType=1 ) !important;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 
 body .et_pb_scroll_top:hover {

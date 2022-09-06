@@ -13,8 +13,8 @@
 STYLES
 =========================== */
 // CHANGE HIGHLIGHT COLOUR
-::-moz-selection { background: $primary1; color: $white; }
-::selection { background: $primary1; color: $white; }
+::-moz-selection { @include colourGrad(); color: $white; }
+::selection { @include colourGrad(); color: $white; }
 
 // CHANGE GLOBAL ROW MAX WIDTH
 #top-header > .container,
@@ -218,11 +218,12 @@ body {
             }
             .socialIcons {
                 img {
-                    height: 40px;
-                    opacity: 0.75;
-                    transition: opacity 0.4s cubic-bezier(.2, .85, .32, 1.2);
+                    height: 50px;
+                    opacity: 1;
+                    filter: brightness(100);
+                    transition: filter 0.4s cubic-bezier(.2, .85, .32, 1.2);
                     &:hover {
-                        opacity: 1;
+                        filter: brightness(1);
                     }
                 }
                 display: flex;
@@ -1006,7 +1007,7 @@ body {
         border-radius: 0!important;
         @include colourGrad();
         transition: opacity 0.2s linear;
-        opacity: 0.5;
+        opacity: 0.5!important;
         &:hover {
             opacity: 1;
         }
