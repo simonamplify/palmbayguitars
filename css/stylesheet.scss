@@ -221,7 +221,6 @@ body {
                     height: 50px;
                     opacity: 1;
                     filter: brightness(100);
-                    transition: filter 0.2s linear;
                     &:hover {
                         filter: brightness(1);
                     }
@@ -1012,7 +1011,7 @@ body {
         transition: opacity 0.2s linear;
         opacity: 0.5!important;
         &:hover {
-            opacity: 1;
+            opacity: 1!important;
         }
     }
 }
