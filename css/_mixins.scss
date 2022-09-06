@@ -60,8 +60,8 @@
     -webkit-background-clip: text!important;
     background-clip: text!important;
     -webkit-background-clip: text!important;
-    text-fill-color: transparent!important;
-    -webkit-text-fill-color: transparent!important;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 @mixin colourGrad {
     background: -moz-linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%)!important;

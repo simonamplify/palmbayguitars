@@ -49,8 +49,8 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
-  -webkit-text-fill-color: transparent !important;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   position: relative;
 }
 
@@ -437,8 +437,8 @@ body #page-container #et-main-area .et_pb_text.titleGrad h1, body #page-containe
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
-  -webkit-text-fill-color: transparent !important;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
@@ -448,8 +448,8 @@ body #page-container #et-main-area .et_pb_text.textGrad .et_pb_text_inner {
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
-  -webkit-text-fill-color: transparent !important;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
