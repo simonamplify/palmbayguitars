@@ -71,6 +71,7 @@ footer {
                     }
                 }
                 .et_pb_newsletter_button_wrap {
+                    position: relative;
                     &::after {
                         content: ""!important;
                         position: absolute;

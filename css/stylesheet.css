@@ -78,8 +78,8 @@ body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module
   -webkit-text-fill-color: #ffffff;
   color: #ffffff;
   border: 1px solid !important;
-  border-image-slice: 1;
-  border-width: 1px;
+  border-image-slice: 1 !important;
+  border-width: 1px !important;
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
 }
 
@@ -1899,6 +1899,10 @@ body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_fo
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .input:focus {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+}
+
+body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap {
+  position: relative;
 }
 
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap::after {
