@@ -47,7 +47,7 @@ body {
         @include ease2();
         @include textGrad();
         position: relative;
-        &::after {
+        &::before {
             content: ""!important;
             position: absolute;
             display: block;
@@ -71,7 +71,7 @@ body {
             border-image-slice: 1;
             border-width: 1px;
             border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
-            &::after {
+            &::before {
                 opacity: 0.5!important;
                 margin: 0!important;
             }
@@ -221,7 +221,7 @@ body {
                     height: 50px;
                     opacity: 1;
                     filter: brightness(100);
-                    transition: filter 0.4s cubic-bezier(.2, .85, .32, 1.2);
+                    transition: filter 0.2s linear;
                     &:hover {
                         filter: brightness(1);
                     }

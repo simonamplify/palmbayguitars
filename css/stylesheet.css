@@ -54,7 +54,7 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
   position: relative;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::after, body .et_button_no_icon .et_pb_button::after, body .et_pb_newsletter_button::after {
+body .et_pb_button_module_wrapper .et_pb_button::before, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button::before, body .et_button_no_icon .et_pb_button::before, body .et_pb_newsletter_button::before {
   content: "" !important;
   position: absolute;
   display: block;
@@ -83,7 +83,7 @@ body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
 }
 
-body .et_pb_button_module_wrapper .et_pb_button:hover::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover::after, body .et_button_no_icon .et_pb_button:hover::after, body .et_pb_newsletter_button:hover::after {
+body .et_pb_button_module_wrapper .et_pb_button:hover::before, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover::before, body .et_button_no_icon .et_pb_button:hover::before, body .et_pb_newsletter_button:hover::before {
   opacity: 0.5 !important;
   margin: 0 !important;
 }
@@ -597,10 +597,10 @@ body #page-container #et-main-area .socialIcons img {
   opacity: 1;
   -webkit-filter: brightness(100);
           filter: brightness(100);
-  -webkit-transition: -webkit-filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
-  transition: -webkit-filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
-  transition: filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
-  transition: filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2), -webkit-filter 0.4s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  -webkit-transition: -webkit-filter 0.2s linear;
+  transition: -webkit-filter 0.2s linear;
+  transition: filter 0.2s linear;
+  transition: filter 0.2s linear, -webkit-filter 0.2s linear;
 }
 
 body #page-container #et-main-area .socialIcons img:hover {
