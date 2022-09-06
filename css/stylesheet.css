@@ -44,13 +44,13 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  text-fill-color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
   position: relative;
 }
 
@@ -432,24 +432,24 @@ body #page-container #et-main-area .et_pb_row.fwRow {
 }
 
 body #page-container #et-main-area .et_pb_text.titleGrad h1, body #page-container #et-main-area .et_pb_text.titleGrad h2, body #page-container #et-main-area .et_pb_text.titleGrad h3, body #page-container #et-main-area .et_pb_text.titleGrad h4 {
-  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  text-fill-color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
   display: inline-block;
 }
 
 body #page-container #et-main-area .et_pb_text.textGrad .et_pb_text_inner {
-  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  text-fill-color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
   display: inline-block;
 }
 

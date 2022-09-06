@@ -55,13 +55,13 @@
     }
 }
 @mixin textGrad {
-    background: linear-gradient(45deg, #073ffa, #63279b, #dc061e);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg, #073ffa, #63279b, #dc061e)!important;
+    background-clip: border-box!important;
+    -webkit-background-clip: text!important;
+    background-clip: text!important;
+    -webkit-background-clip: text!important;
+    text-fill-color: transparent!important;
+    -webkit-text-fill-color: transparent!important;
 }
 @mixin colourGrad {
     background: -moz-linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%)!important;
