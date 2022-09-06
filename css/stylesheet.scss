@@ -47,7 +47,7 @@ body {
         @include ease2();
         @include textGrad();
         position: relative;
-        &::before {
+        &::after {
             content: ""!important;
             position: absolute;
             display: block;
@@ -67,11 +67,11 @@ body {
             text-fill-color: $white;
             -webkit-text-fill-color: $white;
             color: $white;
-            border: 1px solid;
+            border: 1px solid!important;
             border-image-slice: 1;
             border-width: 1px;
             border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
-            &::before {
+            &::after {
                 opacity: 0.5!important;
                 margin: 0!important;
             }
