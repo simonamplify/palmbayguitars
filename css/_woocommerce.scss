@@ -744,7 +744,7 @@
                             .et_pb_column:nth-child(2) {
                                 -webkit-order: 1;
                                 order: 1;
-                                @media (min-width: 981px)
+                                @media (min-width: 981px) {
                                     position: -webkit-sticky;
                                     position: sticky;
                                     top: 187px;

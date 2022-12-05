@@ -2929,15 +2929,28 @@ body .et_pb_scroll_top:hover {
   color: #ffffff;
 }
 
-.woocommerce-page.single-product #page-container #et-main-area #main-content .productContent > .et_pb_row .et_pb_column:nth-child(2) {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 82px;
+@media (max-width: 980px) {
+  .woocommerce-page.single-product #page-container #et-main-area #main-content .productContent > .et_pb_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-@media (max-width: 980px) {
+.woocommerce-page.single-product #page-container #et-main-area #main-content .productContent > .et_pb_row .et_pb_column:nth-child(2) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media (min-width: 981px) {
   .woocommerce-page.single-product #page-container #et-main-area #main-content .productContent > .et_pb_row .et_pb_column:nth-child(2) {
-    top: 70px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 187px;
+    top: calc(4% + 87px);
   }
 }
 
