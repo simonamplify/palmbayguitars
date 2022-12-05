@@ -731,7 +731,9 @@
                         }
                     }
                     .et_pb_wc_title {
-                        @include textGrad();
+                        h1 {
+                            @include textGrad();
+                        }
                     }
                     .productContent  {
                         > .et_pb_row {

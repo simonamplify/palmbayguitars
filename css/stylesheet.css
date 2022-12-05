@@ -2929,7 +2929,7 @@ body .et_pb_scroll_top:hover {
   color: #ffffff;
 }
 
-.woocommerce-page.single-product #page-container #et-main-area #main-content .et_pb_wc_title {
+.woocommerce-page.single-product #page-container #et-main-area #main-content .et_pb_wc_title h1 {
   background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
   background-clip: border-box !important;
   -webkit-background-clip: text !important;
