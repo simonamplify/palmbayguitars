@@ -2929,6 +2929,16 @@ body .et_pb_scroll_top:hover {
   color: #ffffff;
 }
 
+.woocommerce-page.single-product #page-container #et-main-area #main-content .et_pb_wc_title {
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 980px) {
   .woocommerce-page.single-product #page-container #et-main-area #main-content .productContent > .et_pb_row {
     display: -webkit-box;
