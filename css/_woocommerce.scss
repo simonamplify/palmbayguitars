@@ -741,6 +741,10 @@
                                 -webkit-flex-wrap: wrap;
                                 flex-wrap: wrap;
                             }
+                            .et_pb_column:nth-child(1) {
+                                -webkit-order: 2;
+                                order: 2;
+                            }
                             .et_pb_column:nth-child(2) {
                                 -webkit-order: 1;
                                 order: 1;
@@ -749,6 +753,9 @@
                                     position: sticky;
                                     top: 187px;
                                     top: calc(4% + 87px);
+                                }
+                                @media (min-width: 1750px) {
+                                    top: 157px;
                                 }
                             }
                         }
