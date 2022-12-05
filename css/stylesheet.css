@@ -2929,6 +2929,18 @@ body .et_pb_scroll_top:hover {
   color: #ffffff;
 }
 
+.woocommerce-page.single-product #page-container #et-main-area #main-content .productContent > .et_pb_row .et_pb_column:nth-child(2) {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 82px;
+}
+
+@media (max-width: 980px) {
+  .woocommerce-page.single-product #page-container #et-main-area #main-content .productContent > .et_pb_row .et_pb_column:nth-child(2) {
+    top: 70px;
+  }
+}
+
 .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu {
   margin: 0 !important;
   width: 100% !important;
