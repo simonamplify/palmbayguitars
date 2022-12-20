@@ -856,6 +856,21 @@
         }
         .products  {
             padding-top: 10px;
+            .product {
+                .et_shop_image {
+                    overflow: hidden;
+                    img.attachment-woocommerce_thumbnail {
+                        @include ease2();
+                    }
+                }
+                &:hover {
+                    .et_shop_image {
+                        img.attachment-woocommerce_thumbnail {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
         }
         select {
             display: block;

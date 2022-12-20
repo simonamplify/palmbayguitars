@@ -13,8 +13,16 @@
 STYLES
 =========================== */
 // CHANGE HIGHLIGHT COLOUR
-::-moz-selection { background: $primary1; color: $white; }
-::selection { background: $primary1; color: $white; }
+::-moz-selection { 
+    background: $primary1; color: $white; 
+    text-fill-color: $white;
+    -webkit-text-fill-color: $white; 
+}
+::selection { 
+    background: $primary1; color: $white; 
+    text-fill-color: $white;
+    -webkit-text-fill-color: $white; 
+}
 
 // CHANGE GLOBAL ROW MAX WIDTH
 #top-header > .container,

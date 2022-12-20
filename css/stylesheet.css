@@ -4,11 +4,15 @@ STYLES
 ::-moz-selection {
   background: #63279b;
   color: #ffffff;
+  text-fill-color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 
 ::selection {
   background: #63279b;
   color: #ffffff;
+  text-fill-color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 
 #top-header > .container,
@@ -2382,6 +2386,15 @@ body .et_pb_scroll_top:hover {
 }
 .et_pb_shop .woocommerce .products {
   padding-top: 10px;
+}
+.et_pb_shop .woocommerce .products .product .et_shop_image {
+  overflow: hidden;
+}
+.et_pb_shop .woocommerce .products .product .et_shop_image img.attachment-woocommerce_thumbnail {
+  transition: all 0.2s ease-in-out;
+}
+.et_pb_shop .woocommerce .products .product:hover .et_shop_image img.attachment-woocommerce_thumbnail {
+  transform: scale(1.1);
 }
 .et_pb_shop .woocommerce select {
   display: block;
