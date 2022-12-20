@@ -341,12 +341,12 @@ body #page-container header .menuSearchBtn .material-icons {
     opacity: 1;
   }
 }
+body #page-container a:where(:not(.wp-element-button)) {
+  text-decoration: none;
+}
 body #page-container #et-main-area .et_pb_row.fwRow {
   width: 100% !important;
   max-width: none !important;
-}
-body #page-container #et-main-area a:where(:not(.wp-element-button)) {
-  text-decoration: none;
 }
 body #page-container #et-main-area .et_pb_text.titleGrad h1, body #page-container #et-main-area .et_pb_text.titleGrad h2, body #page-container #et-main-area .et_pb_text.titleGrad h3, body #page-container #et-main-area .et_pb_text.titleGrad h4 {
   background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
