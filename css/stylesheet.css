@@ -1520,7 +1520,7 @@ body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_fo
   padding: 0;
 }
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap:hover::after {
-  opacity: 0.5 !important;
+  opacity: 1 !important;
   margin: 0 !important;
 }
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap .et_pb_newsletter_button {
