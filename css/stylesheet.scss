@@ -1082,6 +1082,9 @@ body {
             @include ease2();
             @include textGrad();
             position: relative;
+            text-fill-color: $white;
+            -webkit-text-fill-color: $white;
+            color: $white;
             &::after {
                 content: ""!important;
                 position: absolute;
@@ -1092,22 +1095,22 @@ body {
                 left: 0;
                 z-index: -1;
                 @include colourGrad();
-                opacity: 0;
+                opacity: 1;
                 @include ease2();
                 margin: 0!important;
                 padding: 0;
             }
             &:hover {
                 padding: 0.5em 1.5em 0.4em 1.5em !important;
-                text-fill-color: $white;
-                -webkit-text-fill-color: $white;
-                color: $white;
+                text-fill-color: transparent;
+                -webkit-text-fill-color: transparent;
+                color: unset;
                 border: 1px solid!important;
                 border-image-slice: 1!important;
                 border-width: 1px!important;
                 border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
                 &::after {
-                    opacity: 1!important;
+                    opacity: 0!important;
                     margin: 0!important;
                 }
             }
@@ -1120,9 +1123,6 @@ body {
                 @include ease2();
                 @include textGrad();
                 position: relative;
-                text-fill-color: $white;
-                -webkit-text-fill-color: $white;
-                color: $white;
                 &::after {
                     content: ""!important;
                     position: absolute;
@@ -1133,22 +1133,22 @@ body {
                     left: 0;
                     z-index: -1;
                     @include colourGrad();
-                    opacity: 1;
+                    opacity: 0;
                     @include ease2();
                     margin: 0!important;
                     padding: 0;
                 }
                 &:hover {
                     padding: 0.5em 1.5em 0.4em 1.5em !important;
-                    text-fill-color: transparent;
-                    -webkit-text-fill-color: transparent;
-                    color: unset;
+                    text-fill-color: $white;
+                    -webkit-text-fill-color: $white;
+                    color: $white;
                     border: 1px solid!important;
                     border-image-slice: 1!important;
                     border-width: 1px!important;
                     border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
                     &::after {
-                        opacity: 0!important;
+                        opacity: 1!important;
                         margin: 0!important;
                     }
                 }	
