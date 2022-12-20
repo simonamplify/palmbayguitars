@@ -343,7 +343,7 @@ body #page-container header .menuSearchBtn .material-icons {
   }
 }
 body #page-container a:where(:not(.wp-element-button)) {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 body #page-container #et-main-area .et_pb_row.fwRow {
   width: 100% !important;
@@ -1647,6 +1647,9 @@ body .et_pb_scroll_top:hover {
 }
 
 /* SIDE CART */
+.xoo-wsc-modal a:where(:not(.wp-element-button)) {
+  text-decoration: none !important;
+}
 .xoo-wsc-modal .xoo-wsc-container .xoo-wsc-items-count {
   background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#073ffa", endColorstr="#dc061e",GradientType=1 ) !important;
@@ -2522,7 +2525,52 @@ body .et_pb_scroll_top:hover {
   transform: scale(1.1);
 }
 .et_pb_shop .woocommerce .products .product .button {
+  padding: 0.5em 1.5em 0.4em 1.5em !important;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  transition: all 0.2s ease-in-out;
+  background: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 0;
   font-size: 16px !important;
+}
+.et_pb_shop .woocommerce .products .product .button::after {
+  content: "" !important;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#073ffa", endColorstr="#dc061e",GradientType=1 ) !important;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  margin: 0 !important;
+  padding: 0;
+}
+.et_pb_shop .woocommerce .products .product .button:hover {
+  padding: 0.5em 1.5em 0.4em 1.5em !important;
+  text-fill-color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+  border: 1px solid !important;
+  border-image-slice: 1 !important;
+  border-width: 1px !important;
+  border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
+}
+.et_pb_shop .woocommerce .products .product .button:hover::after {
+  opacity: 1 !important;
+  margin: 0 !important;
 }
 .et_pb_shop .woocommerce .products .product .button.add_to_cart_button::after {
   transform: none !important;

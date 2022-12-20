@@ -871,6 +871,7 @@
                     }
                 }
                 .button {
+                    @include button();
                     font-size: 16px!important;
                     &.add_to_cart_button {
                         &::after {

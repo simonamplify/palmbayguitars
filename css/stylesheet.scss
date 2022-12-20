@@ -61,7 +61,7 @@ body {
             }
         }
         a:where(:not(.wp-element-button)) {
-            text-decoration: none;
+            text-decoration: none!important;
         }
         #et-main-area {
             .et_pb_row.fwRow {
@@ -1022,6 +1022,9 @@ body {
 }
 /* SIDE CART */
 .xoo-wsc-modal {
+    a:where(:not(.wp-element-button)) {
+        text-decoration: none!important;
+    }
     .xoo-wsc-container {
 		.xoo-wsc-items-count {
 			@include colourGrad();
