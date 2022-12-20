@@ -364,6 +364,9 @@ body #page-container #et-main-area .et_pb_text.textGrad .et_pb_text_inner {
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+body #page-container #et-main-area .et_pb_text.textCenter .et_pb_text_inner {
+  text-align: center;
+}
 @media (min-width: 981px) {
   body #page-container #et-main-area .et_pb_text.twoCol .et_pb_text_inner {
     -moz-column-count: 2;

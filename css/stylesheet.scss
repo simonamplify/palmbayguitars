@@ -109,6 +109,11 @@ body {
                         display: inline-block;
                     }  
                 }
+                &.textCenter {
+                    .et_pb_text_inner {
+                        text-align: center;
+                    }
+                }
                 &.twoCol {
                     .et_pb_text_inner {
                         @media (min-width: 981px) {
