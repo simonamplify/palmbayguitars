@@ -73,7 +73,7 @@
     font-family: 'Bungee',display;
     padding: 0.5em 1.5em 0.4em 1.5em !important;
     border: 1px solid;
-    border-image-slice: 1;
+    border-image-slice: 1!important;
     border-width: 1px;
     border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
     @include ease2();

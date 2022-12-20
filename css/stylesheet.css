@@ -40,7 +40,7 @@ body .et_pb_button_module_wrapper .et_pb_button, body .et_pb_button_module_wrapp
   font-family: "Bungee", display;
   padding: 0.5em 1.5em 0.4em 1.5em !important;
   border: 1px solid;
-  border-image-slice: 1;
+  border-image-slice: 1 !important;
   border-width: 1px;
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
   transition: all 0.2s ease-in-out;
@@ -1509,7 +1509,6 @@ body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_fo
 }
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap {
   position: relative;
-  border-image-slice: 1 !important;
 }
 body #page-container #et-main-area footer .et_pb_newsletter .et_pb_newsletter_form .et_pb_newsletter_fields .et_pb_newsletter_button_wrap::after {
   content: "" !important;
@@ -1667,7 +1666,7 @@ body .et_pb_scroll_top:hover {
   font-family: "Bungee", display;
   padding: 0.5em 1.5em 0.4em 1.5em !important;
   border: 1px solid;
-  border-image-slice: 1;
+  border-image-slice: 1 !important;
   border-width: 1px;
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
   transition: all 0.2s ease-in-out;
@@ -1729,7 +1728,7 @@ body .et_pb_scroll_top:hover {
   font-family: "Bungee", display;
   padding: 0.5em 1.5em 0.4em 1.5em !important;
   border: 1px solid;
-  border-image-slice: 1;
+  border-image-slice: 1 !important;
   border-width: 1px;
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
   transition: all 0.2s ease-in-out;
@@ -2532,7 +2531,7 @@ body .et_pb_scroll_top:hover {
   font-family: "Bungee", display;
   padding: 0.5em 1.5em 0.4em 1.5em !important;
   border: 1px solid;
-  border-image-slice: 1;
+  border-image-slice: 1 !important;
   border-width: 1px;
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
   transition: all 0.2s ease-in-out;
