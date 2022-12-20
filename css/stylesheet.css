@@ -2,14 +2,12 @@
 STYLES
 =========================== */
 ::-moz-selection {
-  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#073ffa", endColorstr="#dc061e",GradientType=1 ) !important;
+  background: #63279b;
   color: #ffffff;
 }
 
 ::selection {
-  background: linear-gradient(45deg, #073ffa 0%, #63279b 50%, #dc061e 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#073ffa", endColorstr="#dc061e",GradientType=1 ) !important;
+  background: #63279b;
   color: #ffffff;
 }
 
