@@ -857,10 +857,16 @@
         .products  {
             padding-top: 10px;
             .product {
+                background-color: $grey;
+                padding: 20px;
                 .et_shop_image {
                     overflow: hidden;
                     img.attachment-woocommerce_thumbnail {
+                        margin-bottom: 0 !important;
                         @include ease2();
+                    }
+                    .woocommerce-loop-product__title {
+                        margin-top: 10px;
                     }
                 }
                 &:hover {
@@ -873,6 +879,7 @@
                 .button {
                     @include button();
                     font-size: 14px!important;
+                    margin-top: 2em;
                     &.add_to_cart_button {
                         &::after {
                             transform: none!important;
