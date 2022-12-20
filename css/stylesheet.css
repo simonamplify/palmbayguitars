@@ -2519,7 +2519,7 @@ body .et_pb_scroll_top:hover {
   padding-top: 10px;
 }
 .et_pb_shop .woocommerce .products .product {
-  background-color: #c6c6c6;
+  background-color: #f0f0f0;
   padding: 20px;
 }
 .et_pb_shop .woocommerce .products .product .et_shop_image {
@@ -2529,7 +2529,7 @@ body .et_pb_scroll_top:hover {
   margin-bottom: 0 !important;
   transition: all 0.2s ease-in-out;
 }
-.et_pb_shop .woocommerce .products .product .et_shop_image .woocommerce-loop-product__title {
+.et_pb_shop .woocommerce .products .product .woocommerce-loop-product__title {
   margin-top: 10px;
 }
 .et_pb_shop .woocommerce .products .product:hover .et_shop_image img.attachment-woocommerce_thumbnail {

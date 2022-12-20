@@ -857,7 +857,7 @@
         .products  {
             padding-top: 10px;
             .product {
-                background-color: $grey;
+                background-color: $lgrey;
                 padding: 20px;
                 .et_shop_image {
                     overflow: hidden;
@@ -865,9 +865,9 @@
                         margin-bottom: 0 !important;
                         @include ease2();
                     }
-                    .woocommerce-loop-product__title {
-                        margin-top: 10px;
-                    }
+                }
+                .woocommerce-loop-product__title {
+                    margin-top: 10px;
                 }
                 &:hover {
                     .et_shop_image {
