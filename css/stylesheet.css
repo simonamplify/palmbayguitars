@@ -77,7 +77,7 @@ body .et_pb_button_module_wrapper .et_pb_button:hover, body .et_pb_button_module
   border-image-source: linear-gradient(45deg, #073ffa, #63279b, #dc061e) !important;
 }
 body .et_pb_button_module_wrapper .et_pb_button:hover::after, body .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button:hover::after, body .et_button_no_icon .et_pb_button:hover::after, body .et_pb_newsletter_button:hover::after {
-  opacity: 0.5 !important;
+  opacity: 1 !important;
   margin: 0 !important;
 }
 body #page-container {
