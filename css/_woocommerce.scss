@@ -870,6 +870,29 @@
                         }
                     }
                 }
+                .button {
+                    font-size: 16px!important;
+                    &.add_to_cart_button {
+                        &::after {
+                            transform: none!important;
+                        }
+                        &.loading {
+                            &::after {
+                                transform: none!important;
+                            }
+                        }
+                    }
+                }
+                .added_to_cart {
+                    width: 100%;
+                    font-size: 16px;
+                }
+                &.outofstock {
+                    .button {
+                        pointer-events: none;
+                        opacity: 0.2;
+                    }
+                }
             }
         }
         select {
