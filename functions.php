@@ -133,6 +133,15 @@ function wpse_wpautop_nobr( $content ) {
 
 add_filter( 'the_content', 'wpse_wpautop_nobr' );
 add_filter( 'the_excerpt', 'wpse_wpautop_nobr' );
+add_shortcode('my-gallery', 'my_gallery_func');
+function my_gallery_func($atts, $content){
+    ob_start();
+    $path = WooCommerce::plugin_path();
+    include($path . '/templates/single-product/product-thumbnails.php');
+    $output = ob_get_contents();
+    ob_end_clean();
+    return $output;
+}
 // Add cart button to shop archive pages
 add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 10);
 ?>
