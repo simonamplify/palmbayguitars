@@ -2763,13 +2763,13 @@ body .et_pb_scroll_top:hover {
   color: #000000;
 }
 
-.woocommerce-page #page-container #et-main-area a {
+.woocommerce-page #page-container #et-main-area a, .woocommerce-page #page-container #et-main-area .menu:not(a) {
   text-decoration: none !important;
   position: relative;
   cursor: pointer;
 }
 
-.woocommerce-page #page-container #et-main-area a::before {
+.woocommerce-page #page-container #et-main-area a::before, .woocommerce-page #page-container #et-main-area .menu:not(a)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2778,7 +2778,7 @@ body .et_pb_scroll_top:hover {
   border-bottom: 1px solid #63279b;
 }
 
-.woocommerce-page #page-container #et-main-area a::after {
+.woocommerce-page #page-container #et-main-area a::after, .woocommerce-page #page-container #et-main-area .menu:not(a)::after {
   content: "";
   position: absolute;
   right: 0;
@@ -2793,14 +2793,14 @@ body .et_pb_scroll_top:hover {
           transition-delay: .15s;
 }
 
-.woocommerce-page #page-container #et-main-area a:hover::before {
+.woocommerce-page #page-container #et-main-area a:hover::before, .woocommerce-page #page-container #et-main-area .menu:not(a):hover::before {
   content: "";
   right: 0;
   -webkit-transition: right .15s ease-out;
   transition: right .15s ease-out;
 }
 
-.woocommerce-page #page-container #et-main-area a:hover::after {
+.woocommerce-page #page-container #et-main-area a:hover::after, .woocommerce-page #page-container #et-main-area .menu:not(a):hover::after {
   content: "";
   left: 0;
 }
@@ -3161,7 +3161,7 @@ body .et_pb_scroll_top:hover {
 }
 
 .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .widgettitle {
-  font-family: 'Rubik',Helvetica,Arial,Lucida,sans-serif;
+  font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif !important;
   font-weight: 500 !important;
   font-size: 16px !important;
 }
