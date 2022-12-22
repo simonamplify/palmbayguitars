@@ -720,7 +720,19 @@
                 #main-content {
                     .woocommerce-product-gallery {
                         .flex-viewport, .flex-control-thumbs li {
-                            border: solid 1px #f2f2f2;
+                            border: solid 1px $grey;
+                        }
+                        .flex-control-nav {
+                            width: 10% !important;
+                            float: left;
+                            position: absolute;
+                            top: 3px;
+                            left: 3px;
+                            margin: 0;
+                            li {
+                                width: 100%;
+                                float: none;
+                            }
                         }
                     }
                     .et_pb_text { 
