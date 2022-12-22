@@ -396,7 +396,7 @@
                 }
             }   
             // links
-            a:not(.button, .et_pb_button, .woocommerce-Button, .woocommerce-LoopProduct-link), .menu:not(a) {
+            a:not(.button, .et_pb_button, .woocommerce-Button, .woocommerce-LoopProduct-link), .menu a:not(a) {
                 text-decoration: none!important;
                 position: relative;
                 cursor: pointer;
