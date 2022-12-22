@@ -818,8 +818,8 @@
                                 display: block;
                                 padding: 0 15px;
                                 transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
-                                border: solid 2px $black;
-                                color: $black;
+                                border: solid 2px $primary1;
+                                color: $primary1;
                                 font-size: 16px;
                                 line-height: 1.8em;
                                 font-weight: 400;
@@ -827,7 +827,7 @@
                                     content: none!important;
                                 }                       
                                 &:hover {
-                                    background-color: $black;
+                                    background-color: $primary1;
                                     color: $white;
                                 }
                                 @media (max-width:767px) {
