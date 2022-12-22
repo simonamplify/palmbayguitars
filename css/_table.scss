@@ -2,7 +2,8 @@
     //// Add .table class to apply table container styles
     margin: auto;
     display: block;
-    border-top: dotted 1px $lgrey;
+    border-top: dotted 1px $drk;
+    border-bottom: dotted 1px $drk;
     .tableRow {
         //// Add .tableRow to apply table row styles
         display: flex;
