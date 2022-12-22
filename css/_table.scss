@@ -2,7 +2,7 @@
     //// Add .table class to apply table container styles
     margin: auto;
     display: block;
-    border-top: dotted 1px $grey;
+    border-top: dotted 1px $lgrey;
     .tableRow {
         //// Add .tableRow to apply table row styles
         display: flex;
@@ -11,13 +11,13 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: flex-start;
-        border-bottom: dotted 1px $grey;
+        //border-bottom: dotted 1px $grey;
         @media (max-width:767px) {
             flex-wrap: wrap;
             padding: 5px 0;
         }
         &:nth-child(odd) {
-            background-color: $lgrey;
+            background-color: $drkbg;
         }
         .tableCell {
             //// Add .tableCell to apply table cell styles within a table row
