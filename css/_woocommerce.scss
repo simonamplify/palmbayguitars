@@ -719,9 +719,6 @@
             #et-main-area {
                 #main-content {
                     .woocommerce-product-gallery {
-                        .flex-viewport, .flex-control-thumbs li {
-                            border: solid 1px $lgrey;
-                        }
                         .flex-control-nav {
                             width: 10% !important;
                             float: left;
@@ -732,6 +729,7 @@
                             li {
                                 width: 100%;
                                 float: none;
+                                border: solid 1px $lgrey;
                             }
                         }
                     }
