@@ -83,27 +83,41 @@ function startTable() {
     return ob_get_clean(); 
 }
 add_shortcode('startTable', 'startTable');
-// Create table row shortcode
+// Create end table shortcode
+function endTable() {
+    ob_start();
+    echo '</div>';
+    return ob_get_clean(); 
+}
+add_shortcode('endTable', 'endTable');
+// Create start table row shortcode
 function startRow() {
     ob_start();
     echo '<div class="tableRow">';
     return ob_get_clean(); 
 }
 add_shortcode('startRow', 'startRow');
-// Create table row shortcode
+// Create end table row shortcode
+function endRow() {
+    ob_start();
+    echo '</div>';
+    return ob_get_clean(); 
+}
+add_shortcode('endRow', 'endRow');
+// Create start table cell shortcode
 function startCell() {
     ob_start();
     echo '<div class="tableCell">';
     return ob_get_clean(); 
 }
 add_shortcode('startCell', 'startCell');
-// Create table row shortcode
-function end() {
+// Create end table cell shortcode
+function endCell() {
     ob_start();
     echo '</div>';
     return ob_get_clean(); 
 }
-add_shortcode('end', 'end');
+add_shortcode('endCell', 'endCell');
 // Change sale badge text to
 add_filter('woocommerce_sale_flash', 'change_sale_text');
 function change_sale_text() {
