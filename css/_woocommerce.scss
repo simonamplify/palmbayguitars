@@ -63,7 +63,6 @@
                         text-align: center;
                     }
                     .table {
-                        max-width: 800px;
                         .tableRow {
                             .tableCell {
                                 line-height: 1.5em;
@@ -73,7 +72,7 @@
                                 }
                                 &:nth-child(1) {
                                     font-weight: 400;
-                                    color: $white;
+                                    color: $lgrey;
                                 }
                                 &:nth-child(2) {
                                     flex-grow: 3;
