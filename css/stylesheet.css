@@ -2763,13 +2763,13 @@ body .et_pb_scroll_top:hover {
   color: #000000;
 }
 
-.woocommerce-page #page-container #et-main-area a, .woocommerce-page #page-container #et-main-area .menu a:not() {
+.woocommerce-page #page-container #et-main-area a {
   text-decoration: none !important;
   position: relative;
   cursor: pointer;
 }
 
-.woocommerce-page #page-container #et-main-area a::before, .woocommerce-page #page-container #et-main-area .menu a:not()::before {
+.woocommerce-page #page-container #et-main-area a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2778,7 +2778,7 @@ body .et_pb_scroll_top:hover {
   border-bottom: 1px solid #63279b;
 }
 
-.woocommerce-page #page-container #et-main-area a::after, .woocommerce-page #page-container #et-main-area .menu a:not()::after {
+.woocommerce-page #page-container #et-main-area a::after {
   content: "";
   position: absolute;
   right: 0;
@@ -2793,14 +2793,14 @@ body .et_pb_scroll_top:hover {
           transition-delay: .15s;
 }
 
-.woocommerce-page #page-container #et-main-area a:hover::before, .woocommerce-page #page-container #et-main-area .menu a:not():hover::before {
+.woocommerce-page #page-container #et-main-area a:hover::before {
   content: "";
   right: 0;
   -webkit-transition: right .15s ease-out;
   transition: right .15s ease-out;
 }
 
-.woocommerce-page #page-container #et-main-area a:hover::after, .woocommerce-page #page-container #et-main-area .menu a:not():hover::after {
+.woocommerce-page #page-container #et-main-area a:hover::after {
   content: "";
   left: 0;
 }
@@ -3208,6 +3208,10 @@ body .et_pb_scroll_top:hover {
   font-size: 16px;
   line-height: 1.8em;
   font-weight: 400;
+}
+
+.woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu .menu-item a::before, .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu .menu-item a::after {
+  content: "";
 }
 
 .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu .menu-item a:hover {
