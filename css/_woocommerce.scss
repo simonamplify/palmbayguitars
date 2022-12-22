@@ -756,13 +756,12 @@
                                 @media (min-width: 981px) {
                                     position: -webkit-sticky;
                                     position: sticky;
-                                    top: 187px;
-                                    top: calc(4% + 87px);
-                                }
-                                @media (min-width: 1750px) {
-                                    top: 157px;
+                                    top: 160px;
                                 }
                             }
+                        }
+                        .button {
+                            @include button();
                         }
                     }
                 }
