@@ -3211,7 +3211,7 @@ body .et_pb_scroll_top:hover {
 }
 
 .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu .menu-item a::before, .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu .menu-item a::after {
-  content: none;
+  content: none !important;
 }
 
 .woocommerce-page .et_pb_widget_area.shopBar .widget_nav_menu .menu-product-category-menu-container #menu-product-category-menu .menu-item a:hover {
