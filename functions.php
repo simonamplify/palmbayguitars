@@ -76,6 +76,34 @@ function manuals() {
     return ob_get_clean(); 
 }
 add_shortcode('manuals', 'manuals');
+// Create start table shortcode
+function startTable() {
+    ob_start();
+    echo '<div class="table">';
+    return ob_get_clean(); 
+}
+add_shortcode('startTable', 'startTable');
+// Create table row shortcode
+function startRow() {
+    ob_start();
+    echo '<div class="tableRow">';
+    return ob_get_clean(); 
+}
+add_shortcode('startRow', 'startRow');
+// Create table row shortcode
+function startCell() {
+    ob_start();
+    echo '<div class="tableCell">';
+    return ob_get_clean(); 
+}
+add_shortcode('startCell', 'startCell');
+// Create table row shortcode
+function end() {
+    ob_start();
+    echo '</div>';
+    return ob_get_clean(); 
+}
+add_shortcode('end', 'end');
 // Change sale badge text to
 add_filter('woocommerce_sale_flash', 'change_sale_text');
 function change_sale_text() {
