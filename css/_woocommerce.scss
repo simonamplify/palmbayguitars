@@ -812,7 +812,7 @@
                                 line-height: 1.8em;
                                 font-weight: 400;
                                 &::before, &::after {
-                                    content: "";
+                                    content: none;
                                 }                       
                                 &:hover {
                                     background-color: $black;
