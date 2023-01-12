@@ -445,7 +445,6 @@
                     .woocommerce {
                         .button {
                             @include button();
-                            font-size: 17px;
                         }
                         .woocommerce-form-coupon {
                             border-radius: 0;
@@ -539,6 +538,7 @@
                     .woocommerce {
                         .button {
                             @include button();
+                            font-size: 17px;
                         }
                         .woocommerce-cart-form {
                             .woocommerce-cart-form__contents {
