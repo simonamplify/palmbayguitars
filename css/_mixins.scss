@@ -110,3 +110,20 @@
         }
     }
 }
+@mixin button-inverse {
+    @include button();
+    text-fill-color: $white;
+    -webkit-text-fill-color: $white;
+    color: $white;
+    &::after {
+        opacity: 1;
+    }
+    &:hover {
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        color: unset;
+        &::after {
+            opacity: 0!important;
+        }
+    }
+}

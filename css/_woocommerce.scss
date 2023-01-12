@@ -445,6 +445,7 @@
                     .woocommerce {
                         .button {
                             @include button();
+                            font-size: 17px;
                         }
                         .woocommerce-form-coupon {
                             border-radius: 0;
@@ -615,6 +616,9 @@
                                     }
                                 }
                             }
+                        }
+                        .checkout-button  {
+                            @include button-inverse(); 
                         }
                     }
                 }

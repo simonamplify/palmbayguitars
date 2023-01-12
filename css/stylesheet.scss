@@ -1041,21 +1041,7 @@ body {
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .button.btn {
-			@include button();
-            text-fill-color: $white;
-            -webkit-text-fill-color: $white;
-            color: $white;
-            &::after {
-                opacity: 1;
-            }
-            &:hover {
-                text-fill-color: transparent;
-                -webkit-text-fill-color: transparent;
-                color: unset;
-                &::after {
-                    opacity: 0!important;
-                }
-            }
+			@include button-inverse();
 			&:not(.xoo-wsc-ft-btn-checkout) {
 				@include button();	
 			}
