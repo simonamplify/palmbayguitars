@@ -443,6 +443,9 @@
             #et-main-area {
                 #main-content {
                     .woocommerce {
+                        .button {
+                            @include button();
+                        }
                         .woocommerce-form-coupon {
                             border-radius: 0;
                             border: none;
@@ -533,6 +536,9 @@
             #et-main-area {
                 #main-content {
                     .woocommerce {
+                        .button {
+                            @include button();
+                        }
                         .woocommerce-cart-form {
                             .woocommerce-cart-form__contents {
                                 .woocommerce-cart-form__cart-item {
@@ -605,18 +611,7 @@
                                         }
                                     }
                                     .button:disabled, .button:disabled[disabled] {
-                                        padding: 0.5em 1.5em 0.4em 1.5em !important;
-                                        font-size: 16px;
-                                        background-color: $primary1;
-                                        border-color: $primary1;
-                                        border-radius: 0px;
-                                        font-weight: bold;
-                                        font-style: normal;
-                                        text-transform: uppercase;
-                                        text-decoration: none;
-                                        letter-spacing: -1px;
                                         opacity: 0.5;
-                                        color: $white;
                                     }
                                 }
                             }
