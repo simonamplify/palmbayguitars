@@ -697,6 +697,14 @@
                                 }
                             }
                         }
+                        .woocommerce-MyAccount-content {
+                            a {
+                                text-decoration: none;
+                                position: relative;
+                                cursor: pointer;
+                                white-space: nowrap;
+                            }
+                        }
                         #customer_login {
                             h2 {
                                 font-size: 43px;
