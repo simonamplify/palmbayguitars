@@ -487,6 +487,9 @@
                                 .wc_payment_methods {
                                     border-color: #e5e5e5;
                                 }
+                                #place_order {
+                                    @include button-inverse();
+                                }
                                 .validate-required {
                                     padding-top: 15px;
                                     input[type='checkbox'] {
