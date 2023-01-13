@@ -668,14 +668,12 @@
                                         margin-bottom: 0;
                                     }
                                     a {
-                                        font-family: 'Josefin Sans',Helvetica,Arial,Lucida,sans-serif;
+                                        font-family: 'Bungee',display;
                                         text-transform: uppercase;
-                                        font-size: 17px;
-                                        color: $white;
-                                        background-color: $black;
-                                        letter-spacing: -1px;
-                                        padding: 12px 25px 10px 25px;
-                                        font-weight: 600;
+                                        font-size: 18px;
+                                        color: $black;
+                                        background-color: $grey;
+                                        padding: 8px 20px 8px 20px;
                                         @include ease2();
                                         &::before {
                                             content: none;
@@ -684,7 +682,7 @@
                                             content: none;
                                         }
                                         &:hover {
-                                            background-color: $primary1;
+                                            background-color: $black;
                                             color: $white;
                                         }
                                     }
