@@ -138,14 +138,10 @@
                     .button  {
                         order: 2;
                         @include button();
+                        text-fill-color: $white !important;
+                            -webkit-text-fill-color: $white !important;
                         @media (max-width:767px) {
                             margin-top: 15px;
-                        }
-                        &:hover {
-                            padding: 0.5em 1.5em 0.4em 1.5em !important;
-                            color: $white!important;
-                            opacity: 0.7;
-                            //background-color: $white!important;
                         }
                     }
                     .showcoupon {
