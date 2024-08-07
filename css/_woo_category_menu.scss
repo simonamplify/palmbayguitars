@@ -1,0 +1,74 @@
+// Category menu
+.et_pb_widget_area {
+    &.shopBar {
+        .widget_nav_menu {
+            margin: 0!important;
+            width: 100%!important;
+            float: none!important;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .widgettitle {
+                font-family: $header-font;
+                font-weight: 500 !important;
+                font-size: 16px !important;
+            }
+            .menu-product-category-menu-container {
+                margin-top: 10px;
+                #menu-product-category-menu {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    align-content: center;
+                    gap: 10px;
+                    @media (max-width:767px) {
+                        gap: 5px;
+                    }
+                    .menu-item {
+                        margin: 0;
+                        padding: 0!important;
+                        position: relative;
+                        @media (max-width:767px) {
+                            margin: 0;
+                        }
+                        a {
+                            position: relative;
+                            display: block;
+                            padding: 0 15px;
+                            transition: color 0.3s linear, background-color 0.3s linear!important;
+                            background-color: #141414;
+                            border: none;
+                            color: $white-color!important;
+                            font-size: 16px;
+                            line-height: 1.8em;
+                            font-weight: 400;
+                            &::before, &::after {
+                                content: none!important;
+                            }                       
+                            &:hover {
+                                background-color: $secondary-color;
+                                color: $white-color!important;
+                            }
+                            @media (max-width:767px) {
+                                font-size: 14px;
+                                line-height: 1.7em;
+                                border: solid 1px $black-color;
+                            }
+                        }
+                        &.current-menu-item {
+                            a {
+                                background-color: $secondary-color;
+                                color: $white-color!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

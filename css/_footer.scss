@@ -1,0 +1,183 @@
+////////////////////////////////////////////
+// Footer
+////////////////////////////////////////////
+footer {
+    z-index: 0;
+    position: relative;
+    background-color: $black-color;
+    background-image: url(/wp-content/uploads/2022/09/footer-bg.jpg)!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+        background-image: url(/wp-content/uploads/2022/09/footer-bg-@X2.jpg)!important;   
+    }
+    @media (max-width:980px) {
+        background-image: url(/wp-content/uploads/2022/09/footer-bg-mobile.jpg)!important;
+        @media 
+        (-webkit-min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi) { 
+            background-image: url(/wp-content/uploads/2022/09/footer-bg-mobile-@X2.jpg)!important;   
+        }
+    }
+    a {
+        color: $light-font-color;
+        @include ease2();
+        white-space: normal;
+        &::before {
+            content: none!important;
+        }
+        &::after {
+            content: none!important;
+        }
+        &:hover {
+            color: $white-color;
+        }
+    }
+    .widget_nav_menu {
+        margin-bottom: 0;
+        @media (max-width:980px) {
+            margin-bottom: 50px;
+            &:nth-child(3), &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media (max-width:980px) {
+            &:nth-child(3) {
+                margin-bottom: 50px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        ul {
+            li {
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .et_pb_newsletter {
+        .et_pb_newsletter_form {
+            .et_pb_newsletter_fields {
+                .input {
+                    @include ease2();
+                    &:focus {
+                        backdrop-filter: blur(2px);
+                    }
+                }
+                .et_pb_newsletter_button_wrap {
+                    position: relative;
+                    &::after {
+                        content: ""!important;
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        @include colourGrad();
+                        opacity: 0;
+                        @include ease2();
+                        margin: 0!important;
+                        padding: 0;
+                    }
+                    &:hover {
+                        &::after {
+                            opacity: 1!important;
+                            margin: 0!important;
+                        }
+                    }
+                    .et_pb_newsletter_button {
+                        padding: 0.5em 1.5em 0.4em 1.5em !important;
+                        &:hover {
+                            padding: 0.5em 1.5em 0.4em 1.5em !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contactDetails{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: stretch;
+        color: $white-color;
+        .contactItem {
+            padding: 0 25px 20px 30px;
+            position: relative;
+            i {
+                color: $primary-color;
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+        }
+        strong {
+            color: $white-color;
+            font-weight: normal;
+        }
+    }
+    .footerBar {
+        a {
+            color: $light-font-color!important;
+            text-decoration: none;
+            transition: color 0.4s linear;
+            &:hover {
+                color: $white-color!important;
+            }
+        }
+        .amplify {
+            .et_pb_text_inner {
+                display: inline-block;
+            }
+            a {
+                padding-right: 37px;
+                position: relative;
+                &::after  {
+                    content: ""!important;
+                    white-space: normal;
+                    right: 0;
+                    left: unset;
+                    bottom: unset;
+                    border-bottom: none;
+                    display: block;
+                    height: 30px;
+                    width: 32px;
+                    @include vertCenter();
+                    background: url(/wp-content/uploads/2022/09/amplify-creative-glyph-animated.svg) no-repeat;
+                    background-size: contain;
+                }
+                &:hover {
+                    &::after  {
+                        left: unset;
+                    }
+                }
+            }
+        }
+    }
+    
+    .et_pb_social_media_follow {
+        &.faSocialFooter {
+            .et_pb_social_icon {
+                margin-bottom: 20px;
+                .icon {
+                    margin-right: 20px;
+                }
+                &:last-child {
+                    .icon {
+                        margin-right: 0;
+                    }
+                }
+            }
+        } 
+     }
+}

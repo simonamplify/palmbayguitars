@@ -1,0 +1,245 @@
+:root {
+    font-size: 18px;
+    letter-spacing: .02rem;
+}
+
+// FONTS
+$header-font: 'Bungee', display, Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+$body-font: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+
+// FONT SIZES
+$fs-xxl: clamp(3rem, 4vw + 1rem, 4rem);
+$fs-xl: 2.25rem; 
+$fs-lg: 1.75rem;
+$fs-md: 1.25rem;
+$fs-std: 1rem;
+$fs-sm: 0.8rem;
+$fs-xs: 0.7rem;
+
+$f-lh: 1.8;
+$h-lh: 1.3;
+
+body {
+    font-family: $body-font;
+    #page-container #et-main-area {
+        font-size: $fs-std;
+        line-height: $f-lh;
+        color: $font-color;
+    }
+}
+
+// HEADERS
+body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $header-font;
+      font-weight: bold;
+      line-height: $h-lh;
+      color: $header-color;
+      padding-bottom: 0.75em;
+    }
+    h1 { 
+        font-size: $fs-xl;
+    }
+    h2 { 
+        font-size: $fs-lg;
+    }
+    h3 { 
+        font-size: $fs-md;
+    }
+    h4, h5, h6 { 
+        font-size: $fs-std;
+        padding-bottom: 0.3em;
+    }
+    .heroHeader {
+        h1 {
+            font-size: $fs-xxl;
+        }
+    }
+    .subHeader {
+        margin-bottom: 0;
+        h2, h3, h4 {
+            font-size: $fs-md;
+            padding-bottom: 0.75em;
+        }
+    }
+    strong {
+        font-weight: 500;
+    }
+    sub, sup {
+        font-size: $fs-sm;
+    }
+}
+
+// LINKS
+#page-container #et-main-area #main-content {
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.2s linear;
+        &:hover {
+            color: $primary-color;
+        }
+        &:active {
+            color: $primary-color;
+        }
+        &::selection {
+            color: $white-color;
+            -webkit-text-fill-color: $white-color;
+            background-color: $primary-color;
+        }
+    }
+    // a {
+    //     text-decoration: none;
+    //     position: relative;
+    //     cursor: pointer;
+    //     white-space: nowrap;
+    //     &::before {
+    //         content: "";
+    //         position: absolute;
+    //         left: 0;
+    //         bottom: -.2rem;
+    //         right: 100%;
+    //         border-bottom: 1px solid $primary1;
+    //     }
+    //     &::after {
+    //         content: "";
+    //         position: absolute;
+    //         right: 0;
+    //         left: 100%;
+    //         bottom: -.2rem;
+    //         border-bottom: 1px solid $primary1;
+    //         -webkit-transition: left .15s ease-out;
+    //         -o-transition: left .15s ease-out;
+    //         transition: left .15s ease-out;
+    //         transition-delay: 0s;
+    //         transition-delay: .15s;
+    //     }
+    //     &:hover {
+    //         &::before {
+    //             content: "";
+    //             right: 0;
+    //             -webkit-transition: right .15s ease-out;
+    //             -o-transition: right .15s ease-out;
+    //             transition: right .15s ease-out;
+    //         }
+    //         &::after {
+    //             content: "";
+    //             left: 0;
+    //         }
+    //     }
+    // }
+}
+
+// TEXT
+p::selection, span::selection {
+    color: $white-color;
+    -webkit-text-fill-color: $white-color;
+    background-color: $primary-color;
+}
+.titleGrad {
+    h1, h2, h3, h4 {
+        @include textGrad();
+    }
+}
+.textGrad {
+    @include textGrad();
+}
+
+// LISTS
+#page-container #et-main-area {
+    ul, ol {
+        &::selection {
+            color: $white-color;
+            background-color: $primary-color;
+        }
+        line-height: $f-lh;
+        list-style-position: outside;
+        padding: 0 0 1em 1.3rem;
+        li {
+            &:not(:last-of-type) {
+                padding-bottom: 0.25em;
+            }
+            &::marker {
+                color: inherit;
+            }
+        }
+        ul, ol {
+            padding-bottom: 0;
+        }
+    }
+    ul {
+        ul{
+            &:nth-of-type(1) {
+                padding: 0 0 0 1.5rem;
+            }
+        }
+        
+    }
+    ol {
+        counter-reset: lv1Style;
+        padding: 0 0 1em 1.6rem;
+        li {
+            padding-left: 0.2rem;
+        }
+        ol {
+            &:nth-of-type(1) {
+                padding: 0 0 0 2.2rem;
+            }
+        }
+        > li {
+            counter-increment: lv1Style;
+            &::marker {
+                content:"[" counter(lv1Style, list-item)"] ";
+            }
+            > ol {
+                counter-reset: lv2Style;
+                > li {
+                    counter-increment: lv2Style;
+                    &::marker {
+                        content:"[" counter(lv2Style, lower-alpha)"] ";
+                    }
+                    > ol {
+                        counter-reset: lv3Style;
+                        > li {
+                            counter-increment: lv3Style;
+                            &::marker {
+                                content:"[" counter(lv3Style, lower-roman)"] ";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    p:last-of-type {
+        + ul, +ol {
+            padding-top: 1em;
+        }
+    }
+}
+
+// ADDRESS
+address {
+    font-style: normal;
+}
+
+// PREFERS CONTRAST
+@media (prefers-contrast: more) {
+    #page-container {
+        #et-main-area {
+            .et_pb_module:not(.et_pb_bg_layout_dark) {
+                color: color-mix(in srgb, currentColor 30%, $black-color 70%)!important;
+                h1, h2, h3, h4, h5, h6, ul li, ol li, p, span, a {
+                    color: color-mix(in srgb, currentColor 30%, $black-color 70%)!important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.et_pb_accordion {
+    .et_pb_toggle.et_pb_accordion_item {
+        .et_pb_toggle_title {
+            &::before {
+                transition: transform 0.2s ease;
+            }
+        }
+        &.et_pb_toggle_open {
+            .et_pb_toggle_title {
+                &::before {
+                    display: block;
+                    font-family: ETmodules!important;
+                    font-weight: 400!important;
+                    content: "\33"!important;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

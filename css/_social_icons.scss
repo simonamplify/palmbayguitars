@@ -1,0 +1,21 @@
+.socialIcons {
+    img {
+        height: 50px;
+        opacity: 1;
+        filter: brightness(100);
+        &:hover {
+            filter: brightness(1);
+        }
+    }
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    a {
+        display: flex;
+        align-items: center;
+    }
+}

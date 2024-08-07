@@ -1,0 +1,11 @@
+.woocommerce-ordering {
+    @include select();
+    select {
+        background-color: #141414;
+        border-color: #282828;
+        color: $light-font-color!important;
+        * {
+            color: $light-font-color!important;
+        }
+    }
+}

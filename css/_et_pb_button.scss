@@ -1,0 +1,100 @@
+@mixin button {
+    font-family: $header-font;
+    padding: 0.5em 1.5em 0.4em 1.5em !important;
+    border: 1px solid;
+    border-image-slice: 1!important;
+    border-width: 1px;
+    border-image-source: linear-gradient(45deg, $primary-color, $secondary-color, $tertiary-color) !important;
+    @include ease2();
+    background: linear-gradient(45deg, $primary-color, $secondary-color, $tertiary-color);
+    background-clip: text!important;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 0;
+    &::after {
+        content: ""!important;
+        position: absolute!important;
+        display: block!important;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        @include colourGrad();
+        opacity: 0!important;
+        @include ease2();
+        margin: 0!important;
+        padding: 0;
+    }
+    &:hover {
+        padding: 0.5em 1.5em 0.4em 1.5em !important;
+        text-fill-color: $white-color;
+        -webkit-text-fill-color: $white-color;
+        color: $white-color;
+        border: 1px solid!important;
+        border-image-slice: 1!important;
+        border-width: 1px!important;
+        border-image-source: linear-gradient(45deg, $primary-color, $secondary-color, $tertiary-color) !important;
+        &::after {
+            opacity: 1!important;
+            margin: 0!important;
+        }
+    }
+}
+@mixin button-white {
+    @include button();
+    text-fill-color: $white-color;
+    -webkit-text-fill-color: $white-color;
+    color: $white-color;
+    &::after {
+        opacity: 0!important;
+    }
+    &:hover {
+        text-fill-color: $white-color;
+        -webkit-text-fill-color: $white-color;
+        color: $white-color;
+        &::after {
+            opacity: 1!important;
+        }
+    }
+}
+@mixin button-inverse {
+    @include button();
+    text-fill-color: $white-color;
+    -webkit-text-fill-color: $white-color;
+    color: $white-color;
+    &::after {
+        opacity: 1!important;
+    }
+    &:hover {
+        text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        color: unset;
+        &::after {
+            opacity: 0!important;
+        }
+    }
+}
+body {
+    #page-container {
+        #et-main-area {
+            #main-content {
+                .et_pb_button, .et_pb_button_module_wrapper .et_pb_button:not(.border), .et_pb_button_module_wrapper .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon .et_pb_button, .et_pb_newsletter_button, .et_contact_bottom_container .et_pb_button, .button {
+                    @include button();
+                    &.inverseBtn {
+                        @include button-inverse();
+                    }
+                    &.whiteBtn {
+                        @include button-white();
+                    }
+                }
+                .inverseBtn {
+                    @include button-inverse();
+                }
+                .whiteBtn {
+                    @include button-white();
+                }
+            }
+        }
+    }
+}

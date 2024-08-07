@@ -1,0 +1,44 @@
+////////////////////////////////////////////
+// Variables & mixins
+////////////////////////////////////////////
+@import 'variables';
+@import 'mixins';
+
+/* ===========================
+STYLES
+=========================== */
+@import 'typography';
+@import 'animations';
+@import 'utilities';
+@import 'custom_rows';
+@import 'inputs';
+@import 'table';
+body {
+    @import 'material_icons';
+    @import 'et_pb_button';
+    #page-container {
+        animation: fade100 1.5s;
+        @import 'header';
+        #et-main-area {
+            @import 'et_pb_text';
+            @import 'et_pb_accordion';
+            @import 'et_pb_newsletter';
+            @import 'et_pb_contact';
+            @import 'et_pb_video_slider';
+            @import 'anything_slider';
+            @import 'card_scroller';
+            @import 'parallax_hero';
+            @import 'social_icons';
+            @import 'category_cards';
+            @import 'comments';
+            @import 'dropdown_menu';
+            @import 'footer';
+        }
+    }
+    @import 'single_post';
+    @import 'fibo_search';
+}
+@import 'woocommerce';
+@import 'et_pb_scroll_top';
+@import 'pop_up_maker';
+.grecaptcha-badge { visibility: hidden!important; }

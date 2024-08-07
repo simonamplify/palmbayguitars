@@ -1,0 +1,70 @@
+@keyframes parallax300Y {
+    to {
+        transform: translateY(300px);
+    }
+}
+@keyframes parallax250Y {
+    to {
+        transform: translateY(250px);
+    }
+}
+@keyframes parallax200Y {
+    to {
+        transform: translateY(200px);
+    }
+}
+@keyframes parallax150Y {
+    to {
+        transform: translateY(150px);
+    }
+}
+@keyframes parallax100Y {
+    to {
+        transform: translateY(100px);
+    }
+}
+@keyframes parallax-300Y {
+    to {
+        transform: translateY(-300px);
+    }
+}
+@keyframes parallax-250Y {
+    to {
+        transform: translateY(-250px);
+    }
+}
+@keyframes parallax-200Y {
+    to {
+        transform: translateY(-200px);
+    }
+}
+@keyframes parallax-150Y {
+    to {
+        transform: translateY(-150px);
+    }
+}
+@keyframes parallax-100Y {
+    to {
+        transform: translateY(-100px);
+    }
+}
+@keyframes parallaxBg {
+    from {
+        transform: translateY(-125px);
+    }
+    to {
+        transform: translateY(75px);
+    }
+}
+
+@keyframes scrollMaskSwipe {
+    to { 
+        mask-size: 100% 100%;
+    }
+}
+
+@keyframes scrollMaskFade {
+    to { 
+        opacity: 1;
+    }
+}

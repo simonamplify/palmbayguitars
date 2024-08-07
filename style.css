@@ -1,0 +1,15 @@
+/*
+ Theme Name:   Palm Bay Guitars' theme
+ Theme URI:    N/A
+ Description:  Theme for Palm Bay Guitars
+ Author:       Amplify Creative
+ Author URI:   https://www.amplify-creative.com
+ Template:     Divi
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         Palm Bay Guitars
+ Text Domain:  amplify-creative.com
+*/
+/* Import override stylehseet */
+@import url("css/stylesheet.css");

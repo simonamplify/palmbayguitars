@@ -1,0 +1,15 @@
+.woocommerce-product-gallery {
+    .flex-control-nav {
+        width: 10% !important;
+        float: left;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        margin: 0;
+        li {
+            width: 100%;
+            float: none;
+            border: solid 1px $grey-color;
+        }
+    }
+}
