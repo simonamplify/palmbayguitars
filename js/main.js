@@ -64,7 +64,6 @@
         var hoverCard = null;
         var hoverCard = document.querySelector('.card');
         if(hoverCard !== null && hoverCard !== '') {
-            console.log('card')
             hoverCard.classList.add('expanded');
             var hoverCards = document.querySelector('.cards');
             hoverCards.onmouseover=function(){
