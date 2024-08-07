@@ -2,9 +2,10 @@
     img {
         height: 50px;
         opacity: 1;
-        filter: brightness(100);
+        filter: brightness(0) invert(1);
+        transition: filter 0.2s linear;
         &:hover {
-            filter: brightness(1);
+            filter: brightness(1) invert(0);
         }
     }
     display: flex;
