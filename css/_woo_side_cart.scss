@@ -52,3 +52,9 @@
         }
     }
 }
+.page-template-page-template-blank {
+    .xoo-wsc-modal {
+        display: none !important;
+        pointer-events: none;
+    }
+}
