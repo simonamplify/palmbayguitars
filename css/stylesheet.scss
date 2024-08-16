@@ -26,14 +26,14 @@ body {
             @import 'et_pb_contact';
             @import 'et_pb_video_slider';
             @import 'anything_slider';
-            @import 'card_scroller';
-            @import 'parallax_hero';
-            @import 'social_icons';
-            @import 'category_cards';
-            @import 'comments';
-            @import 'dropdown_menu';
             @import 'footer';
         }
+        @import 'card_scroller';
+        @import 'parallax_hero';
+        @import 'social_icons';
+        @import 'category_cards';
+        @import 'comments';
+        @import 'dropdown_menu';
     }
     @import 'single_post';
     @import 'fibo_search';
