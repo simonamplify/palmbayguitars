@@ -1,15 +1,20 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 :root {
     font-size: 18px;
-    letter-spacing: .02rem;
+    letter-spacing: 0.02rem;
 }
 
 // FONTS
-$header-font: 'Bungee', display, Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+$header-font:
+    'Bungee', display, Inter, Roboto, 'Helvetica Neue', 'Arial Nova',
+    'Nimbus Sans', Arial, sans-serif;
 $body-font: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
 
 // FONT SIZES
 $fs-xxl: clamp(3rem, 4vw + 1rem, 4rem);
-$fs-xl: 2.25rem; 
+$fs-xl: 2.25rem;
 $fs-lg: 1.75rem;
 $fs-md: 1.25rem;
 $fs-std: 1rem;
@@ -36,22 +41,24 @@ body {
     h4,
     h5,
     h6 {
-      font-family: $header-font;
-      font-weight: bold;
-      line-height: $h-lh;
-      color: $header-color;
-      padding-bottom: 0.75em;
+        font-family: $header-font;
+        font-weight: bold;
+        line-height: $h-lh;
+        color: $header-color;
+        padding-bottom: 0.75em;
     }
-    h1 { 
+    h1 {
         font-size: $fs-xl;
     }
-    h2 { 
+    h2 {
         font-size: $fs-lg;
     }
-    h3 { 
+    h3 {
         font-size: $fs-md;
     }
-    h4, h5, h6 { 
+    h4,
+    h5,
+    h6 {
         font-size: $fs-std;
         padding-bottom: 0.3em;
     }
@@ -62,7 +69,9 @@ body {
     }
     .subHeader {
         margin-bottom: 0;
-        h2, h3, h4 {
+        h2,
+        h3,
+        h4 {
             font-size: $fs-md;
             padding-bottom: 0.75em;
         }
@@ -70,7 +79,8 @@ body {
     strong {
         font-weight: 500;
     }
-    sub, sup {
+    sub,
+    sup {
         font-size: $fs-sm;
     }
 }
@@ -138,13 +148,17 @@ body {
 }
 
 // TEXT
-p::selection, span::selection {
+p::selection,
+span::selection {
     color: $white-color;
     -webkit-text-fill-color: $white-color;
     background-color: $primary-color;
 }
 .titleGrad {
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
         @include textGrad();
     }
 }
@@ -154,7 +168,8 @@ p::selection, span::selection {
 
 // LISTS
 #page-container #et-main-area {
-    ul, ol {
+    ul,
+    ol {
         &::selection {
             color: $white-color;
             background-color: $primary-color;
@@ -170,17 +185,17 @@ p::selection, span::selection {
                 color: inherit;
             }
         }
-        ul, ol {
+        ul,
+        ol {
             padding-bottom: 0;
         }
     }
     ul {
-        ul{
+        ul {
             &:nth-of-type(1) {
                 padding: 0 0 0 1.5rem;
             }
         }
-        
     }
     ol {
         counter-reset: lv1Style;
@@ -196,21 +211,21 @@ p::selection, span::selection {
         > li {
             counter-increment: lv1Style;
             &::marker {
-                content:"[" counter(lv1Style, list-item)"] ";
+                content: '[' counter(lv1Style, list-item) '] ';
             }
             > ol {
                 counter-reset: lv2Style;
                 > li {
                     counter-increment: lv2Style;
                     &::marker {
-                        content:"[" counter(lv2Style, lower-alpha)"] ";
+                        content: '[' counter(lv2Style, lower-alpha) '] ';
                     }
                     > ol {
                         counter-reset: lv3Style;
                         > li {
                             counter-increment: lv3Style;
                             &::marker {
-                                content:"[" counter(lv3Style, lower-roman)"] ";
+                                content: '[' counter(lv3Style, lower-roman) '] ';
                             }
                         }
                     }
@@ -219,7 +234,8 @@ p::selection, span::selection {
         }
     }
     p:last-of-type {
-        + ul, +ol {
+        + ul,
+        + ol {
             padding-top: 1em;
         }
     }
@@ -235,9 +251,27 @@ address {
     #page-container {
         #et-main-area {
             .et_pb_module:not(.et_pb_bg_layout_dark) {
-                color: color-mix(in srgb, currentColor 30%, $black-color 70%)!important;
-                h1, h2, h3, h4, h5, h6, ul li, ol li, p, span, a {
-                    color: color-mix(in srgb, currentColor 30%, $black-color 70%)!important;
+                color: color-mix(
+                    in srgb,
+                    currentColor 30%,
+                    $black-color 70%
+                ) !important;
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                ul li,
+                ol li,
+                p,
+                span,
+                a {
+                    color: color-mix(
+                        in srgb,
+                        currentColor 30%,
+                        $black-color 70%
+                    ) !important;
                 }
             }
         }

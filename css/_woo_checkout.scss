@@ -1,18 +1,22 @@
-&.woocommerce-checkout {
-    input[type="checkbox"]#ship-to-different-address-checkbox {
+@use 'et_pb_button' as *;
+@use 'mixins' as *;
+@use 'typography' as *;
+
+.woocommerce-page.woocommerce-checkout {
+    input[type='checkbox']#ship-to-different-address-checkbox {
         @include switch();
     }
     .woocommerce-form-login {
         .woocommerce-form-login__submit {
             @include button();
-            font-size: $fs-std!important;
+            font-size: $fs-std !important;
         }
     }
     .checkout_coupon {
-        .button[name="apply_coupon"] {
-            margin-top: 0!important;
+        .button[name='apply_coupon'] {
+            margin-top: 0 !important;
             @include button();
-            font-size: $fs-std!important;
+            font-size: $fs-std !important;
         }
     }
     #order_review {
@@ -26,7 +30,7 @@
     .et_pb_wc_checkout_payment_info {
         #payment {
             ul.wc_payment_methods {
-                padding: 0!important;
+                padding: 0 !important;
             }
             .place-order {
                 .button#place_order {

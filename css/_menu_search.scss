@@ -1,5 +1,8 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .et_pb_menu .menuSearchBtn {
-    @media (max-width:980px) {
+    @media (max-width: 980px) {
         display: none;
     }
 }
@@ -7,19 +10,19 @@
     display: none;
     cursor: pointer;
     color: $grey-color;
-    position: absolute!important;
+    position: absolute !important;
     top: 50%;
     right: 60px;
     transform: translateY(-40%);
-    @media (max-width:980px) {
+    @media (max-width: 980px) {
         display: block;
     }
     .et_pb_code_inner {
         line-height: 0;
     }
-} 
+}
 .et_pb_row.menuSearch {
-    position: absolute!important;
+    position: absolute !important;
     opacity: 0;
     pointer-events: none;
     max-height: 0;

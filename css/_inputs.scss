@@ -1,17 +1,37 @@
-textarea, input[type="text"], input[type="password"], input[type="email"],
-.quantity input.qty, .quantity input.qty, #content .quantity input.qty, #content .quantity input.qty, .woocommerce-cart table.cart td.actions .coupon .input-text, form .form-row input.input-text, form .form-row textarea, .et_pb_wc_cart_totals .select2-container--default .select2-selection--single, .et_pb_wc_checkout_billing .select2-container--default .select2-selection--single, .et_pb_wc_checkout_shipping .select2-container--default .select2-selection--single {
-    background-color: $grey-color!important;
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'typography' as *;
+
+textarea,
+input[type='text'],
+input[type='password'],
+input[type='email'],
+.quantity input.qty,
+.quantity input.qty,
+#content .quantity input.qty,
+#content .quantity input.qty,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+form .form-row input.input-text,
+form .form-row textarea,
+.et_pb_wc_cart_totals .select2-container--default .select2-selection--single,
+.et_pb_wc_checkout_billing
+    .select2-container--default
+    .select2-selection--single,
+.et_pb_wc_checkout_shipping
+    .select2-container--default
+    .select2-selection--single {
+    background-color: $grey-color !important;
     color: $black-color;
     border: none;
-    padding: 0.5em 1em!important;
+    padding: 0.5em 1em !important;
     font-weight: 400;
-    font-size: 1rem!important;
-    line-height: $f-lh!important;
-    min-height: 40px!important;
+    font-size: 1rem !important;
+    line-height: $f-lh !important;
+    min-height: 40px !important;
 }
 .input-text {
     &::placeholder {
-        color: $font-color!important;
+        color: $font-color !important;
         font-style: normal;
         opacity: 0.7;
     }
@@ -19,7 +39,7 @@ textarea, input[type="text"], input[type="password"], input[type="email"],
 .select2-selection__rendered {
     color: $font-color;
 }
-.select2-container--default .select2-selection--single[aria-expanded="true"] {
+.select2-container--default .select2-selection--single[aria-expanded='true'] {
     border-top: solid 1px #aaaaaa;
     border-left: solid 1px #aaaaaa;
     border-right: solid 1px #aaaaaa;
@@ -32,12 +52,13 @@ textarea::-webkit-input-placeholder,
 textarea:-ms-input-placeholder,
 textarea::-ms-input-placeholder,
 textarea::placeholder {
-    color: $font-color!important;
+    color: $font-color !important;
     font-style: normal;
     opacity: 0.7;
 }
 input[type='checkbox'],
 input[type='radio'] {
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 34px;
@@ -45,30 +66,36 @@ input[type='radio'] {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    margin: 0 1em 0 0!important;
+    margin: 0 1em 0 0 !important;
     cursor: pointer;
     border: 1px solid $secondary-color;
     background: $white-color;
-    transition: background .3s, border-color .3s;
+    transition:
+        background 0.3s,
+        border-color 0.3s;
     &::after {
         content: '';
         display: block;
         left: 0;
         top: 0;
         position: absolute;
-        transition: transform .3s ease, opacity .2s;
+        transition:
+            transform 0.3s ease,
+            opacity 0.2s;
     }
     &:checked {
         background: $secondary-color;
         border-color: $secondary-color;
         &::after {
-            transition: transform .6s cubic-bezier(.2, .85, .32, 1.2), opacity .3s;
+            transition:
+                transform 0.6s cubic-bezier(0.2, 0.85, 0.32, 1.2),
+                opacity 0.3s;
         }
     }
     &:disabled {
         background: $grey-color;
         cursor: not-allowed;
-        opacity: .2;
+        opacity: 0.2;
         &:checked {
             background: $secondary-color;
         }
@@ -134,11 +161,11 @@ input[type='radio'] {
         border-radius: 50%;
         background: $white-color;
         opacity: 0;
-        transform: scale(.7);
+        transform: scale(0.7);
     }
     &:checked {
         &::after {
-            transform: scale(.5);
+            transform: scale(0.5);
         }
     }
 }
@@ -170,12 +197,13 @@ input[type='radio'] {
     &:has(select) {
         position: relative;
         width: min(300px, 100%);
-        @media (max-width:$screen-sm) {
+        @media (max-width: $screen-sm) {
             width: 100%;
         }
-        &::before, &::after {
+        &::before,
+        &::after {
             --size: 0.25rem;
-            content: "";
+            content: '';
             position: absolute;
             right: calc(0.6rem + var(--size));
             pointer-events: none;
@@ -187,7 +215,7 @@ input[type='radio'] {
             border-bottom: var(--size) solid $font-color;
             top: 50%;
             transform: translateY(calc(var(--size) * -1.5));
-        } 
+        }
         &::after {
             border-left: var(--size) solid transparent;
             border-right: var(--size) solid transparent;
@@ -195,10 +223,11 @@ input[type='radio'] {
             top: 50%;
             transform: translateY(calc(var(--size) / 2));
         }
-        &:hover, &:focus-within {
+        &:hover,
+        &:focus-within {
             &::before {
                 border-bottom-color: $secondary-color;
-            } 
+            }
             &::after {
                 border-top-color: $secondary-color;
             }

@@ -1,14 +1,20 @@
-.et_pb_newsletter {
-    .et_pb_newsletter_form {
-        .et_pb_newsletter_button {
-            @include button-white();
-        }
-        .et_pb_newsletter_result {
-            + .et_pb_newsletter_fields {
-                padding-top: 20px;
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'et_pb_button' as *;
+
+#et-main-area {
+    .et_pb_newsletter {
+        .et_pb_newsletter_form {
+            .et_pb_newsletter_button {
+                @include button-white();
             }
-            h2 {
-                font-size: 20px;
+            .et_pb_newsletter_result {
+                + .et_pb_newsletter_fields {
+                    padding-top: 20px;
+                }
+                h2 {
+                    font-size: 20px;
+                }
             }
         }
     }

@@ -1,6 +1,8 @@
 ////////////////////////////////////////////
 // Mixins
 ////////////////////////////////////////////
+@use 'variables' as *;
+
 @mixin ease5 {
     transition: all 0.5s ease-in-out;
 }
@@ -48,11 +50,14 @@
         column-count: 2;
         column-gap: 5%;
         column-fill: balance;
-        p, li {
+        p,
+        li {
             break-inside: avoid-column;
         }
-        h1, h2, h3 {
-            column-span:all;
+        h1,
+        h2,
+        h3 {
+            column-span: all;
         }
     }
 }
@@ -61,52 +66,74 @@
         column-count: 3;
         column-gap: 5%;
         column-fill: balance;
-        p, li {
+        p,
+        li {
             break-inside: avoid-column;
         }
-        h1, h2, h3 {
-            column-span:all;
+        h1,
+        h2,
+        h3 {
+            column-span: all;
         }
     }
 }
 @mixin textGrad {
-    background: linear-gradient(45deg, $primary-color, $secondary-color, $tertiary-color)!important;
-    background-clip: text!important;
+    background: linear-gradient(
+        45deg,
+        $primary-color,
+        $secondary-color,
+        $tertiary-color
+    ) !important;
+    background-clip: text !important;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     width: fit-content;
-
 }
 @mixin colourGrad {
-    background: -moz-linear-gradient(45deg, $primary-color 0%, $secondary-color 50%, $tertiary-color 100%)!important;
-    background: -webkit-linear-gradient(45deg, $primary-color 0%,$secondary-color 50%,$tertiary-color 100%)!important;
-    background: linear-gradient(45deg, $primary-color 0%,$secondary-color 50%,$tertiary-color 100%)!important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0043a0', endColorstr='#00fdff',GradientType=1 )!important;
+    background: -moz-linear-gradient(
+        45deg,
+        $primary-color 0%,
+        $secondary-color 50%,
+        $tertiary-color 100%
+    ) !important;
+    background: -webkit-linear-gradient(
+        45deg,
+        $primary-color 0%,
+        $secondary-color 50%,
+        $tertiary-color 100%
+    ) !important;
+    background: linear-gradient(
+        45deg,
+        $primary-color 0%,
+        $secondary-color 50%,
+        $tertiary-color 100%
+    ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0043a0', endColorstr='#00fdff',GradientType=1 ) !important;
 }
 @mixin switch {
-    width: 64px!important;
-    border-radius: 22px!important;
+    width: 64px !important;
+    border-radius: 22px !important;
     &::after {
-        left: 4px!important;
-        top: 4px!important;
-        border-radius: 50%!important;
-        width: 24px!important;
-        height: 24px!important;
-        background: $tertiary-color!important;
-        transform: translateX(0)!important;
-        border: none!important;
-        opacity: 1!important;
+        left: 4px !important;
+        top: 4px !important;
+        border-radius: 50% !important;
+        width: 24px !important;
+        height: 24px !important;
+        background: $tertiary-color !important;
+        transform: translateX(0) !important;
+        border: none !important;
+        opacity: 1 !important;
     }
     &:checked {
         &::after {
-            background: $white-color!important;
-            transform: translateX(30px)!important;
+            background: $white-color !important;
+            transform: translateX(30px) !important;
         }
     }
     &:disabled {
         &:not(:checked) {
             &::after {
-                opacity: .6!important;
+                opacity: 0.6 !important;
             }
         }
     }

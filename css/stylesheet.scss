@@ -1,44 +1,39 @@
 ////////////////////////////////////////////
 // Variables & mixins
 ////////////////////////////////////////////
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 /* ===========================
 STYLES
 =========================== */
-@import 'typography';
-@import 'animations';
-@import 'utilities';
-@import 'custom_rows';
-@import 'inputs';
-@import 'table';
-body {
-    @import 'material_icons';
-    @import 'et_pb_button';
-    #page-container {
-        animation: fade100 1.5s;
-        @import 'header';
-        #et-main-area {
-            @import 'et_pb_text';
-            @import 'et_pb_accordion';
-            @import 'et_pb_newsletter';
-            @import 'et_pb_contact';
-            @import 'et_pb_video_slider';
-            @import 'anything_slider';
-            @import 'footer';
-        }
-        @import 'card_scroller';
-        @import 'parallax_hero';
-        @import 'social_icons';
-        @import 'category_cards';
-        @import 'comments';
-        @import 'dropdown_menu';
-    }
-    @import 'single_post';
-    @import 'fibo_search';
+@use 'typography' as *;
+@use 'animations' as *;
+@use 'utilities' as *;
+@use 'custom_rows' as *;
+@use 'inputs' as *;
+@use 'table' as *;
+@use 'material_icons' as *;
+@use 'et_pb_button' as *;
+@use 'header' as *;
+@use 'et_pb_text' as *;
+@use 'et_pb_accordion' as *;
+@use 'et_pb_newsletter' as *;
+@use 'et_pb_contact' as *;
+@use 'et_pb_video_slider' as *;
+@use 'anything_slider' as *;
+@use 'footer' as *;
+@use 'card_scroller' as *;
+@use 'parallax_hero' as *;
+@use 'social_icons' as *;
+@use 'category_cards' as *;
+@use 'comments' as *;
+@use 'dropdown_menu' as *;
+@use 'single_post' as *;
+@use 'fibo_search' as *;
+@use 'woocommerce' as *;
+@use 'et_pb_scroll_top' as *;
+@use 'pop_up_maker' as *;
+.grecaptcha-badge {
+    visibility: hidden !important;
 }
-@import 'woocommerce';
-@import 'et_pb_scroll_top';
-@import 'pop_up_maker';
-.grecaptcha-badge { visibility: hidden!important; }

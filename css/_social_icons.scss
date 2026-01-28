@@ -1,22 +1,24 @@
-.socialIcons {
-    img {
-        height: 50px;
-        opacity: 1;
-        filter: brightness(0) invert(1);
-        transition: filter 0.2s linear;
-        &:hover {
-            filter: brightness(1) invert(0);
+#page-container {
+    .socialIcons {
+        img {
+            height: 50px;
+            opacity: 1;
+            filter: brightness(0) invert(1);
+            transition: filter 0.2s linear;
+            &:hover {
+                filter: brightness(1) invert(0);
+            }
         }
-    }
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 20px;
-    a {
         display: flex;
-        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 20px;
+        a {
+            display: flex;
+            align-items: center;
+        }
     }
 }

@@ -1,8 +1,20 @@
-.button {
-    @include button();
-    font-weight: 700!important;
-    font-size: $fs-std!important;
-    + .added_to_cart {
-        margin-left: 0.75em;
+@use 'variables' as *;
+@use 'typography' as *;
+@use 'et_pb_button' as *;
+
+.woocommerce-page {
+    .button {
+        @include button();
+        font-weight: 700 !important;
+        font-size: $fs-std !important;
+        + .added_to_cart {
+            margin-left: 0.75em;
+        }
+        &.loading {
+            margin-left: 0.75em;
+            &::after {
+                animation: none !important;
+            }
+        }
     }
 }

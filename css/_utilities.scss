@@ -1,11 +1,16 @@
 // CHANGE HIGHLIGHT COLOUR
-::-moz-selection { 
-    background: $primary-color; color: $white-color; 
-    -webkit-text-fill-color: $white-color; 
+@use 'variables' as *;
+@use 'mixins' as *;
+
+::-moz-selection {
+    background: $primary-color;
+    color: $white-color;
+    -webkit-text-fill-color: $white-color;
 }
-::selection { 
-    background: $primary-color; color: $white-color; 
-    -webkit-text-fill-color: $white-color; 
+::selection {
+    background: $primary-color;
+    color: $white-color;
+    -webkit-text-fill-color: $white-color;
 }
 html {
     scroll-behavior: smooth;
@@ -24,9 +29,9 @@ html {
         left: 0;
         img {
             object-fit: contain;
-            height: 100%!important;
-            width: 100%!important;
-            position: absolute!important;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
             transform-origin: center;
             object-position: center;
         }
@@ -35,25 +40,24 @@ html {
 .imgCover {
     height: 100%;
     width: 100%;
-    position: absolute!important;
+    position: absolute !important;
     top: 0;
     left: 0;
     .et_pb_image_wrap {
         height: 100%;
         width: 100%;
-        position: absolute!important;
+        position: absolute !important;
         top: 0;
         left: 0;
         img {
             object-fit: cover;
-            height: 100%!important;
-            width: 100%!important;
-            position: absolute!important;
+            height: 100% !important;
+            width: 100% !important;
+            position: absolute !important;
             transform-origin: center;
             object-position: center;
         }
     }
-    
 }
 .flexHcenter {
     display: flex;
@@ -93,7 +97,7 @@ html {
 .secFadeDrk {
     position: relative;
     &::before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         top: 0;
@@ -101,11 +105,15 @@ html {
         width: 100%;
         height: 30%;
         z-index: 3;
-        background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 75%);
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 75%
+        );
         pointer-events: none;
     }
     &::after {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         bottom: 0;
@@ -113,7 +121,11 @@ html {
         width: 100%;
         height: 30%;
         z-index: 3;
-        background: linear-gradient(to bottom,  rgba(0,0,0,0) 25%,rgba(0,0,0,1) 100%);
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 25%,
+            rgba(0, 0, 0, 1) 100%
+        );
         pointer-events: none;
     }
 }
