@@ -1,23 +1,30 @@
 <?php
 function custom_theme_scripts() {
-    $parent_style = 'Divi';
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style )
+    $parent_handle = 'Divi';
+    wp_enqueue_style(
+        'child-style',
+        get_stylesheet_directory_uri() . '/css/stylesheet.css',
+        array( $parent_handle ),
+        filemtime( get_stylesheet_directory() . '/css/stylesheet.css' )
     );
-    wp_enqueue_script( 'main-js', get_bloginfo( 'stylesheet_directory' ) . '/js/main.min.js', null, null, true);
+    wp_enqueue_script(
+        'main-js',
+        get_stylesheet_directory_uri() . '/js/main.min.js',
+        false,
+        filemtime( get_stylesheet_directory() . '/js/main.min.js' ),
+        true
+    );
+    add_filter('script_loader_tag', function($tag, $handle, $src) {
+        if ( 'main-js' !== $handle ) return $tag;
+        return '<script type="module" src="' . esc_url( $src ) . '"></script>';
+    }, 10, 3);
 }
-add_action( 'wp_enqueue_scripts', 'custom_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'custom_theme_scripts', 11 ); // 11 to ensure it runs after the parent theme's scripts
 // Enqueue login styles
 function my_logincustomCSSfile() {
     wp_enqueue_style('login-styles', get_stylesheet_directory_uri() . '/css/login_stylesheet.css');
 }
 add_action('login_enqueue_scripts', 'my_logincustomCSSfile');
-// Automatically Update Wordpress
-add_filter( 'auto_update_core', '__return_true' );
-// Automatically Update Theme
-add_filter( 'auto_update_theme', '__return_true' );
 // Change login logo url and title text
 function my_loginURL() {
     return '/';
@@ -92,44 +99,32 @@ function custom_et_pb_custom_search( $query = false ) {
 }
 // Create start table shortcode
 function startTable() {
-    ob_start();
-    echo '<div class="table">';
-    return ob_get_clean(); 
+    return '<div class="table">';
 }
 add_shortcode('startTable', 'startTable');
 // Create end table shortcode
 function endTable() {
-    ob_start();
-    echo '</div>';
-    return ob_get_clean(); 
+    return '</div>';
 }
 add_shortcode('endTable', 'endTable');
 // Create start table row shortcode
 function startRow() {
-    ob_start();
-    echo '<div class="tableRow">';
-    return ob_get_clean(); 
+    return '<div class="tableRow">';
 }
 add_shortcode('startRow', 'startRow');
 // Create end table row shortcode
 function endRow() {
-    ob_start();
-    echo '</div>';
-    return ob_get_clean(); 
+    return '</div>';
 }
 add_shortcode('endRow', 'endRow');
 // Create start table cell shortcode
 function startCell() {
-    ob_start();
-    echo '<div class="tableCell">';
-    return ob_get_clean(); 
+    return '<div class="tableCell">';
 }
 add_shortcode('startCell', 'startCell');
 // Create end table cell shortcode
 function endCell() {
-    ob_start();
-    echo '</div>';
-    return ob_get_clean(); 
+    return '</div>';
 }
 add_shortcode('endCell', 'endCell');
 
